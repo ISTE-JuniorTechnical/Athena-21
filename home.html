@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./home.css">
+    <title>ATHENA 2021</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light " id='navigation'>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#events">EVENTS</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+        </div>
+    </nav>
+
+    
+
+
+
+    <div id="home" class='text-center'>
+
+
+    
+
+        <!--=======================================================  -->
+
+        <img src="./logo.png" class="img-fluid img-responsive" id='logo' alt="athena official logo">
+
+        <div id="hbox1">
+            <p id='festname'><span>A</span><span>TH</span><span>EN</span><span>A</span></p>
+            <br>
+            <p id='year'><span>'2</span><span>1</span></p>
+        </div>
+
+        <div id='owl-left'><img src="./owl-right.jpg" alt="owl-left"></div>
+        <div id='owl-right'> <img src="./owl-right.jpg" alt="owl-right"></div>
+        <img src="./moon.png" class='img-responsive img-fluid ' id='moon' alt="moon">
+        <div id="socialmedialinks">
+            <ul>
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="about">
+
+<div class="canvas"></div>
+        <div class="row mx-auto">
+            <div class="col-md-11 mx-auto">
+
+                <div id='arow1' class='mx-auto'>
+
+                    <p style='color:white; ' class=' mx-auto my-auto'> ATHENA IS A TECHNO-CULTURAL FEST BY ISTE TKMCE
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-md-3" id = 'arow2'>
+            
+                    <div  id = 'botpic'>BOT</div>
+                <div id = 'botdesc' class = 'my-auto'><p>CHAT WITH <span>BOT</span> FOR QUERIES RELATED TO <br><span>A</span>THEN<span>A</span></p></div>
+      
+            
+        </div>
+    </div>
+    </div>
+
+    <div id="events">
+
+        <div id = "eheading">EVENTS</div>
+          
+        <div id="eselectionContainer">
+            <button onclick = 'openSection()'>Section</button>
+            <button onclick = 'openWorkshop()'>Workshops</button>
+            <button  onclick = 'openNormal()'>Normal</button>
+        </div>
+
+        <div id = "esection">
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./logo.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+            </div  >        <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+
+        </div>
+
+        <div id="enormal">
+
+          
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+            </div  >        <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+        <div id="eworkshop">
+
+          
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+            </div  >        <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+        <div id = 'eviewmore'>
+
+          <button>viewmore</button>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+    <script src='./home.js'></script>
+</body>
+
+</html>

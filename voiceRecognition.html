@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Voice App</title>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row mx-auto">
+
+            <div class="col-10 mx-auto">
+
+                <div class="speaker circle mx-auto my-auto">
+
+                    <div>
+                        <button class = 'talk btn btn-warning'> Talk</button>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class = 'content'></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script>
+
+
+    const Button = document.querySelector('.talk');
+    const content = document.querySelector('.content');
+
+    const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+
+recognition.onstart = () =>{
+    console.log('voice is activated and you can use me now');
+}
+
+recognition.onresult = (event) => {
+    const current = event.resultIndex;
+    const transcript = event.results[current][0].transcript;
+    content.textContent = transcript;
+    console.log(transcript);
+    readOutLoud(transcript);
+}
+    Button.addEventListener('click', () =>{
+        recognition.start();
+    })
+
+
+    function readOutLoud(message){
+        
+        const speech = new SpeechSynthesisUtterance();
+        console.log(message);
+        speech.text = message;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+
+        window.speechSynthesis.speak(speech);
+    }
+</script>
+</body>
+
+
+<style>
+    .circle{
+        height:40vmin;
+        width:40vmin;
+        border-radius:50%;
+        background:orange;
+        position:relative;
+    
+        display:flex;
+        justify-content:center;
+        align-items: center;
+
+
+
+    }
+    .talk{
+
+        position:absolute;
+        width:35vmin;
+        height:35vmin;
+        border-radius:50%;
+        transform:translate(-50%,-50%);
+
+
+        
+    }
+</style>
+
+
+</html>

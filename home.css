@@ -59,6 +59,48 @@ body{
     color:var(--nilbg);
      
  }
+
+ #login{
+     position:absolute;
+     top:15px;
+     
+     
+    
+ }
+
+ #voicerec{
+     position:absolute;
+     right:10px;
+     top:15px;
+
+ }
+
+ #voicerec button{
+
+    background:transparent;
+    outline: none;
+    padding:0;
+    border:none;
+    color:var(--navlink);
+    font-size:18px;
+    
+
+ }
+
+ #login button{
+     background-color:transparent;
+     color:var(--navlink);
+     font-weight:600;
+     outline:none;
+     border:1px solid var(--navlink);
+ }
+
+ #login button:hover{
+     background-color:white;
+     border:2px solid var(--navlink);
+     font-weight:700;
+     color:var(--navlink);
+ }
 /* ========================================================================================== */
 #home{
     width:100%;
@@ -360,16 +402,20 @@ body{
 /* events section sliding swiper js effects */
 .swiper-container {
     display:grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto auto;
   width: 100%;
 text-align:center;
+/* background-color:green; */
+height:400px;
+padding:20px;
   
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  /* border:3px solid var(--navlink); */
+  border:2px outset var(--navlink);
+  /* border:2px solid var(--navlink); */
   /* width: 100px;
   height: 300px; */
 
@@ -381,7 +427,7 @@ text-align:center;
 /* events group */
 
 #events{
-    height:100vh;
+    height:130vh;
     width:100%;
     background-color:transparent;
     position:absolute;
@@ -464,7 +510,7 @@ text-align:center;
 
     display:grid;
     /* background-color:orange; */
-    margin-top:-400px;
+    margin-top:-457px;
     width: 100%;
     margin-left:-100%;
     height:350px;
@@ -492,7 +538,7 @@ text-align:center;
 }
 
 #eviewmore{
-    margin-top:-45px;
+    margin-top:-165px;
     width:100%;
     display:grid;
     justify-content: center;
@@ -502,9 +548,25 @@ text-align:center;
 
 #eviewmore > button{
 
-    background-color:black;
-    border:2px solid var(--navlink);
+    background-color:transparent;
+    border:1px solid var(--navlink);
     border-radius:5px;
     color:var(--navlink);
     font-weight:700;
+    padding:3px;
+}
+
+#eviewmore span{
+    display:none;
+
+
+}
+
+#eviewmore:hover span{
+    display:inline-block; 
+}
+
+#eviewmore > button:hover{
+    color:var(--nilbg);
+    background-color:var(--navlink);
 }

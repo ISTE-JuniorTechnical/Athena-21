@@ -34,6 +34,10 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
+                <li id = 'voicerec'><span><button id = 'talk' class = 'btn-sm'><i class="fa fa-audio-description" aria-hidden="true"></i></button></span></li>
+                </ul>
+
+                <ul id = 'login' style = 'list-style-type:none;'><li><button class = 'btn-sm'>LOGIN/SIGNUP</button></li></ul>
         </div>
     </nav>
 
@@ -111,9 +115,9 @@
 
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
-              <div class="swiper-slide" style="background-image:url(./logo.jpeg)"></div>
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
             </div  >        <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
@@ -127,9 +131,9 @@
           
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
             </div  >        <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
@@ -141,9 +145,9 @@
           
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
-              <div class="swiper-slide" style="background-image:url(./athena.jpeg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
             </div  >        <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
@@ -152,7 +156,7 @@
 
         <div id = 'eviewmore'>
 
-          <button>viewmore</button>
+          <button>viewmore <span>----></span></button>
 
     </div>
 
@@ -169,10 +173,10 @@
   var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
       
     centeredSlides: true,
     slidesPerView: 'auto',

@@ -4,8 +4,8 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.shadowMap.enabled = false;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.needsUpdate = true;
-
-
+ 
+ 
 document.body.appendChild( renderer.domElement );
 window.addEventListener('resize', onWindowResize, false);
 function onWindowResize() {
@@ -16,23 +16,23 @@ function onWindowResize() {
 var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 500 );
 var scene = new THREE.Scene();
 var cameraRange = 3;
-
+ 
 var setcolor = 0x000000;
-
+ 
 scene.background = new THREE.Color(setcolor)
 scene.fog = new THREE.Fog(setcolor, 2.5, 3.5);
-
+ 
 //-------------------------------------------------------------- SCENE
-
+ 
 var sceneGruop = new THREE.Object3D();
 var particularGruop = new THREE.Object3D();
 var modularGruop = new THREE.Object3D();
-
+ 
 function generateParticle(num, amp = 2) {
   var gmaterial = new THREE.MeshPhysicalMaterial({color:0xFFFFFF, side:THREE.DoubleSide});
-
+ 
   var gparticular = new THREE.CircleGeometry(0.2,5);
-
+ 
   for (var i = 1; i < num; i++) {
     var pscale = 0.001+Math.abs(mathRandom(0.03));
     var particular = new THREE.Mesh(gparticular, gmaterial);
@@ -40,26 +40,32 @@ function generateParticle(num, amp = 2) {
     particular.rotation.set(mathRandom(),mathRandom(),mathRandom());
     particular.scale.set(pscale,pscale,pscale);
     particular.speedValue = mathRandom(1);
-
+ 
     particularGruop.add(particular);
   }
 }
 generateParticle(200, 2);
-
+ 
 sceneGruop.add(particularGruop);
 scene.add(modularGruop);
 scene.add(sceneGruop);
-
+ 
 function mathRandom(num = 1) {
   var setNumber = - Math.random() * num + Math.random() * num;
   return setNumber;
 }
-
+ 
 //------------------------------------------------------------- INIT
 function init() {
-  for (var i = 0; i<30; i++) {
+  for (var i = 0; i<50; i++) {
     var geometry = new THREE.IcosahedronGeometry(1);
-    var material = new THREE.MeshStandardMaterial({shading:THREE.FlatShading, color:0xff0000 , transparent:false, opacity:1, wireframe:false});
+    var material = new THREE.MeshStandardMaterial({
+      shading: THREE.FlatShading,
+      color: 0x3f4d0e,
+      transparent: false,
+      opacity: 1,
+      wireframe: false,
+    });
     var cube = new THREE.Mesh(geometry, material);
     cube.speedRotation = Math.random() * 0.1;
     cube.positionX = mathRandom();
@@ -80,7 +86,7 @@ function init() {
     modularGruop.add(cube);
   }
 }
-
+ 
 //------------------------------------------------------------- CAMERA
 camera.position.set(0, 0, cameraRange);
 var cameraValue = false;
@@ -94,40 +100,45 @@ function cameraSet() {
     cameraValue = false;
   }
 }
-
+ 
 //------------------------------------------------------------- SCENE
-var ambientLight = new THREE.AmbientLight(0xff0000, 0.1);
+var ambientLight = new THREE.AmbientLight(0x45230a, 0.1);
 //scene.add(ambientLight);
-
-var light = new THREE.SpotLight(0xff0000, 3);
+ 
+var light = new THREE.SpotLight(0x2f1907, 3);
 light.position.set(5, 5, 2);
 light.castShadow = true;
 light.shadow.mapSize.width = 10000;
 light.shadow.mapSize.height = light.shadow.mapSize.width;
 light.penumbra = 0.5;
-
-var lightBack = new THREE.PointLight(0xff0000, 1);
+ 
+var lightBack = new THREE.PointLight(0x45230a, 1);
 lightBack.position.set(0, -3, -1);
-
+ 
 scene.add(sceneGruop);
 scene.add(light);
 scene.add(lightBack);
-
+ 
 var rectSize = 2;
 var intensity = 100;
-var rectLight = new THREE.RectAreaLight( 0x0FFFFF, intensity,  rectSize, rectSize );
+var rectLight = new THREE.RectAreaLight(
+  0x45230a,
+  intensity,
+  rectSize,
+  rectSize
+);
 rectLight.position.set( 0, 0, 1 );
 rectLight.lookAt( 0, 0, 0 );
 scene.add( rectLight )
-
+ 
 rectLightHelper = new THREE.RectAreaLightHelper( rectLight );
 //scene.add( rectLightHelper );
-
+ 
 //------------------------------------------------------------- RAYCASTER
 var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2(), INTERSECTED;
 var intersected;
-
+ 
 function onMouseMove(event) {
   event.preventDefault();
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -145,7 +156,7 @@ function onMouseDown(event) {
       
       INTERSECTED = intersected[0].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      INTERSECTED.material.emissive.setHex(0xFFFF00);
+      INTERSECTED.material.emissive.setHex(0x45230a);
       //INTERSECTED.material.map = null;
       //lightBack.position.set(INTERSECTED.position.x,INTERSECTED.position.y,INTERSECTED.position.z);
       
@@ -167,11 +178,11 @@ function onMouseDown(event) {
 function onMouseUp(event) {
   
 }
-
+ 
 window.addEventListener('mousedown', onMouseDown, false);
 window.addEventListener('mouseup', onMouseUp, false);
 window.addEventListener('mousemove', onMouseMove, false);
-
+ 
 //------------------------------------------------------------- RENDER
 var uSpeed = 0.1;
 function animate() {
@@ -205,51 +216,51 @@ function animate() {
   camera.lookAt(scene.position);
   renderer.render( scene, camera );  
 }
-
+ 
 animate();
 init();
-
-
+ 
+ 
 // events sliding using js
-
+ 
 var esection = document.querySelector('#esection');
 var enormal = document.querySelector('#enormal');
 var eworkshop = document.querySelector('#eworkshop');
 var screenwidth = -(window.innerWidth - 17) + 'px';
-
-
-
+ 
+ 
+ 
 var openSection = () =>{
-
+ 
 var marginleftN = window.getComputedStyle(enormal);
 var marginleftW = window.getComputedStyle(eworkshop);
-
+ 
 var enormalleft = marginleftN.getPropertyValue('margin-left')
 var eworkshopleft = marginleftW.getPropertyValue('margin-left')
-
-
-
+ 
+ 
+ 
 esection.style.animation = 'animEsection 2s forwards';
-
+ 
 if(enormalleft != screenwidth ){
   enormal.style.animation = 'animEsection2 2s forwards';
 }
 if(eworkshopleft != screenwidth){
 eworkshop.style.animation = 'animEsection2 2s forwards';
 }
-
-
-
+ 
+ 
+ 
 }
 var openNormal = () =>{
-
+ 
     
 var marginleftS = window.getComputedStyle(esection);
 var marginleftW = window.getComputedStyle(eworkshop);
-
+ 
 var esectionleft = marginleftS.getPropertyValue('margin-left');
 var eworkshopleft = marginleftW.getPropertyValue('margin-left');
-
+ 
 enormal.style.animation = 'animEsection 2s forwards';
 if(esectionleft != screenwidth){
   esection.style.animation = 'animEsection2 2s forwards';
@@ -257,21 +268,21 @@ if(esectionleft != screenwidth){
 if(eworkshopleft != screenwidth){
 eworkshop.style.animation = 'animEsection2 2s forwards';
 }
-
+ 
 console.log(enormalleft, 'enormalleft')
 console.log(esectionleft, 'esectionleft')
 console.log(eworkshopleft, 'eworkshopleft')
-
+ 
 }
 var openWorkshop = () =>{
-
+ 
     
 var marginleftS = window.getComputedStyle(esection);
 var marginleftN = window.getComputedStyle(enormal);
-
+ 
 var esectionleft = marginleftS.getPropertyValue('margin-left');
 var enormalleft = marginleftN.getPropertyValue('margin-left');
-
+ 
 eworkshop.style.animation = 'animEsection 2s forwards';
 if(enormalleft != screenwidth){
   enormal.style.animation = 'animEsection2 2s forwards';
@@ -284,3 +295,53 @@ console.log(esectionleft, 'esectionleft')
 console.log(eworkshopleft, 'eworkshopleft')
 }
 
+// ============================================================================>
+// voice recognition implementation using browser support
+
+const Button = document.querySelector('#talk');
+// const content = document.querySelector('.content');
+
+const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+
+
+recognition.onstart = () => {
+    readOutLoud(' hi I am Sujith  V I . You can ask me what you want to know about the site');
+}
+
+recognition.onresult = (event) => {
+    const current = event.resultIndex;
+    const transcript = event.results[current][0].transcript;
+    // content.textContent = transcript;
+    console.log(transcript);
+
+    if (transcript.includes('fest') || (transcript.includes('athena') || (transcript.includes('iste')))) {
+
+      readOutLoud('iste t k m c e chapter playing a crucial role in empowering young mind to win the battles');
+       
+
+    } else{
+      readOutLoud('get lost what the hell are you talking');
+    }
+
+}
+Button.addEventListener('click', () => {
+    recognition.start();
+})
+
+
+function readOutLoud(message) {
+
+    const speech = new SpeechSynthesisUtterance();
+    console.log(message);
+    speech.text = message;
+    speech.volume = 1;
+    speech.rate = 0.75;
+    speech.pitch = 1;
+
+    window.speechSynthesis.speak(speech);
+}
+
+
+
+// ===========================================================================>

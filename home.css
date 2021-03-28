@@ -368,6 +368,25 @@ opacity:.3
     left:-2%;
     z-index:-1;
   }
+
+  #downtoup{
+      font-size:40px;
+      color:var(--navlink);
+      font-weight: 500;
+      position:fixed;
+      bottom:10px;
+      right:10px;
+      z-index:5;
+  }
+
+  #downtoup a{
+      text-decoration:none;
+      color:var(--navlink);
+
+  }
+  #downtoup:hover a{
+   color:orangered;
+}
   
   
 
@@ -398,6 +417,9 @@ opacity:.3
     font-size:20px;
     width:700px;
     background-color:var(--bg);
+    opacity:0.7;
+
+    /* background-color:transparent; */
     padding:15px;
     display:grid;
     justify-content:center;
@@ -421,6 +443,10 @@ opacity:.3
     width:200px;
     border:1px solid var(--navlink);
     background-color:var(--bg );
+    opacity:0.7;
+
+    /* background-color:transparent; */
+
     color:var(--nilbg);
     display:grid;
     justify-content:center;
@@ -437,6 +463,9 @@ opacity:.3
     width:500px;
     border:1px solid var(--navlink);
     background-color:var(--bg );
+    opacity:0.7;
+    /* background-color:transparent; */
+
     color:var(--nilbg);
     display:grid;
     justify-content:center;

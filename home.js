@@ -1,4 +1,3 @@
-// Three JS Template
 var renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.shadowMap.enabled = false;
@@ -341,7 +340,3 @@ function readOutLoud(message) {
 
     window.speechSynthesis.speak(speech);
 }
-
-
-
-// ===========================================================================>

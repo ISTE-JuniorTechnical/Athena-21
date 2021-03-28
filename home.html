@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light " id='navigation'>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light " id='navigation'>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
 
 
 
-    <div id="home" class='text-center'>
+    <div id="home" class='text-center mt-md-5'>
 
 
     
@@ -74,9 +74,17 @@
                 </li>
             </ul>
         </div>
+
+        
+        <div id="scrollDown">
+            <span><a href="#events" >^</a></span>
+          </div>
     </div>
 
     <div id="about">
+        <div class="row mx-auto" id = 'aheading'>
+            <p class = 'mx-auto mb-5'>ABOUT</p>
+          </div>
 
 <div class="canvas"></div>
         <div class="row mx-auto">
@@ -103,9 +111,9 @@
 
     <div id="events">
 
-        <div id = "eheading">EVENTS</div>
+        <div id = "eheading" class = 'mb-md-5'>EVENTS</div>
           
-        <div id="eselectionContainer">
+        <div id="eselectionContainer" class = 'mb-md-5'>
             <button onclick = 'openSection()'>Section</button>
             <button onclick = 'openWorkshop()'>Workshops</button>
             <button  onclick = 'openNormal()'>Normal</button>
@@ -156,7 +164,7 @@
 
         <div id = 'eviewmore'>
 
-          <button>viewmore <span>----></span></button>
+          <button>view <span>--></span></button>
 
     </div>
 

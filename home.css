@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body, html{
+    scroll-behavior:smooth;
+}
+
 body{
     background-color: var(--bg);
 }
@@ -116,13 +120,13 @@ body{
     width:auto;
     display:block;
     position:absolute;
-    top:30px;
+    top:80px;
     left:50%;
     transform:translateX(-50%);
 }
 #hbox1{
     position:absolute;
-    top:180px;
+    top:220px;
     left:50%;
     transform:translate(-50%);
     display:grid;
@@ -187,7 +191,9 @@ body{
 
 
   
-  
+  #socialmedialinks{
+      margin-top:40px;
+  }
   
   
  #socialmedialinks ul {
@@ -301,6 +307,53 @@ body{
       transform:translateX(-50%);
   }
  
+
+#scrollDown{
+
+    font-size:65px;
+    color:var(--navlink);
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%) rotate(180deg);
+    border:2px solid var(--navlink);
+display:grid;
+place-items: center;
+height:60px;
+width:60px;
+border-radius:50%;
+opacity:.3
+
+
+}
+
+#scrollDown a{
+    color:var(--navlink);
+    text-decoration:none;
+}
+#scrollDown span{
+    margin-bottom:0px;
+    position:absolute;
+    animation:scrollDown 3s infinite;
+
+}
+@keyframes scrollDown{
+    0%, 100%{
+        top:-15%;
+    }
+    50%{
+        top:-30%;
+    }
+}
+
+#scrollDown:hover{
+    opacity:1;
+}
+
+
+
+
+
 /* ======================================== */
 
 /* background appearances */
@@ -323,10 +376,17 @@ body{
 
 #about{
     width:100%;
-    height:100vh;
-    /* background-color:var(--bg); */
+    height:80vh;
     background-color:transparent;
     overflow:hidden;
+}
+
+
+#aheading{
+    color:var(--navlink);
+    font-size:40px;
+    font-weight:700;
+
 }
 
 #arow1{
@@ -402,12 +462,10 @@ body{
 /* events section sliding swiper js effects */
 .swiper-container {
     display:grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 380px 380px 380px;
   width: 100%;
 text-align:center;
-/* background-color:green; */
 height:400px;
-padding:20px;
   
 }
 
@@ -415,9 +473,7 @@ padding:20px;
   background-position: center;
   background-size: cover;
   border:2px outset var(--navlink);
-  /* border:2px solid var(--navlink); */
-  /* width: 100px;
-  height: 300px; */
+ 
 
 }
 /* 
@@ -431,12 +487,9 @@ padding:20px;
     width:100%;
     background-color:transparent;
     position:absolute;
-    top:200vh;
+    top:190vh;
     color:var(--nilbg);
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows:100px 100px 350px;
-    grid-row-gap:20px;
+   
 
 }
 
@@ -449,6 +502,10 @@ padding:20px;
     align-content:center;
     justify-content:center;
     padding-top:10px;
+}
+
+#eventcontainer{
+    position:relative;
 }
 
 #eselectionContainer
@@ -491,29 +548,29 @@ padding:20px;
 #esection{
 
     display:grid;
-    /* background-color:green; */
-    position:relative;
+    position:absolute;
     width: 100%;
     margin-left:0%;
-    /* grid-template-columns:auto auto auto auto; */
+    margin-top:30px;
 }
 #enormal{
 
     display:grid;
-    /* background-color:var(--navlink); */
-    margin-top:-370px;
     width: 100%;
     margin-left:-100%;
-    height:350px;
+    position:absolute;
+    margin-top:30px;
+
 }
 #eworkshop{
 
     display:grid;
-    /* background-color:orange; */
-    margin-top:-457px;
     width: 100%;
     margin-left:-100%;
-    height:350px;
+    position:absolute;
+    margin-top:30px;
+
+
 }
 
 @keyframes animEsection{
@@ -538,12 +595,14 @@ padding:20px;
 }
 
 #eviewmore{
-    margin-top:-165px;
     width:100%;
     display:grid;
     justify-content: center;
     align-items:center;
     padding:5px;
+    position:absolute;
+    z-index:5;
+    top:800px;
 }
 
 #eviewmore > button{
@@ -553,7 +612,8 @@ padding:20px;
     border-radius:5px;
     color:var(--navlink);
     font-weight:700;
-    padding:3px;
+    padding:6px;
+    text-transform:uppercase;
 }
 
 #eviewmore span{

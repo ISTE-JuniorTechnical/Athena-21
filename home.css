@@ -31,13 +31,7 @@ body{
     background-color:var(--bg);
 
 }
-#navigation ul{
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    align-items:center;
-    justify-content:center;
-    grid-column-gap:70px;
-}
+
 
 #navigation li:hover{
 
@@ -90,6 +84,7 @@ body{
      font-weight:600;
      outline:none;
      border:1px solid var(--navlink);
+     z-index:6
  }
 
  #login button:hover{
@@ -163,7 +158,6 @@ body{
     background:transparent;
     left:0;
     transform:rotateY(180deg);
-    /* z-index:-1; */
 }
 #owl-right{
     /* display:block; */
@@ -171,8 +165,7 @@ body{
     right:0;
     top:40px;
     background:transparent;
-    /* z-index:-1; */
-    /* right:-42.9vmin; */
+
 }
 #moon{
     display:block;

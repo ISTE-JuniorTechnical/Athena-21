@@ -23,14 +23,7 @@ body, html{
 body{
     background-color: var(--bg);
 }
-.container-fluid{
-    margin:0;
-    padding:0;
-    overflow:hidden;
-    background-color:var(--bg);
-    /* background-color:transparent; */
 
-}
 /* navigation menu ===========================================================================*/
 
 #navigation{
@@ -157,6 +150,10 @@ body{
 }
 #hbox1 #year span{
     font-size:40px;
+}
+
+#owl{
+    display:none;
 }
 
 #owl-left{
@@ -570,7 +567,7 @@ height:400px;
 #eselectionContainer > button:focus{
 
     border:2px solid var(--nilbg);
-    transform:scale(1.2);
+    transform:scale(1.05);
  }
 
 

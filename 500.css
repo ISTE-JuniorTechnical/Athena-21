@@ -19,9 +19,6 @@
 body, html{
     scroll-behavior:smooth;
 }
-body{
-    background-color: var(--bg);
-}
 
 #navigation{
     width:100vw;
@@ -51,10 +48,8 @@ body{
 #moon{
     display:block;
     width:350px;
-    height:auto;
-    position:relative;
-    top:0;
-    left:0;
+   top:85%;
+   z-index:-1;
 }
 
 
@@ -67,11 +62,44 @@ body{
 
 #owl{
     display:block;  
+    width:350px;
+    height:auto;
+    margin-top: 112px;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    z-index:-1;
 }
 
 
 
+#home #logo{
+    height:150px;
+    width:auto;
+    display:block;
+    position:absolute;
+    top: 61px;
+    left:50%;
+    transform:translateX(-50%);
+}
 
+
+#hbox1{
+    position:absolute;
+    top: 239px;
+    left:50%;
+    transform:translate(-50%);
+    display:grid;
+    grid-template-columns:auto auto;
+}
+
+#socialmedialinks{
+    top: 330px;
+}
+
+#scrollDown{
+    top: 90vh;
+}
 
 #arow1{
 
@@ -97,6 +125,11 @@ body{
     position:relative;
     top:150px;
 
+}
+
+#about{
+    height:100vh;
+    top:20px;
 }
 
 
@@ -136,6 +169,12 @@ body{
     font-size:20px;
     line-height:34px;
     border-radius:10px;
+}
+
+
+
+#events{
+    margin-top:0px;
 }
 
 .swiper-container {

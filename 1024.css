@@ -1,0 +1,66 @@
+#moon{
+    width:900;
+}
+#arow1{
+
+    color:white;
+    text-align:center;
+    border:1px solid var(--navlink);
+    border-radius:10px;
+    font-size:20px;
+    width:700px;
+    background-color:var(--bg);
+    opacity:0.7;
+
+    /* background-color:transparent; */
+    padding:15px;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#arow2{
+    color:var(--nilbg);
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content:center;
+    align-content:center;
+    grid-column-gap: 20px;
+
+}
+
+#botpic{
+
+    height:150px;
+    width:200px;
+    border:1px solid var(--navlink);
+    background-color:var(--bg );
+    opacity:0.7;
+    color:var(--nilbg);
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    z-index:4;
+    border-radius:10px;
+
+
+
+}
+
+#botdesc{
+    height:150px;
+    width:500px;
+    border:1px solid var(--navlink);
+    background-color:var(--bg );
+    opacity:0.7;
+    color:var(--nilbg);
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    z-index:4;
+    font-size:20px;
+    line-height:34px;
+    border-radius:10px;
+}

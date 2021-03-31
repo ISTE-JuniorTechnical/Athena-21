@@ -48,7 +48,7 @@ body, html{
 #moon{
     display:block;
     width:350px;
-   top:85%;
+   top:100vh;
    z-index:-1;
 }
 
@@ -78,7 +78,7 @@ body, html{
     width:auto;
     display:block;
     position:absolute;
-    top: 61px;
+    top: 51px;
     left:50%;
     transform:translateX(-50%);
 }
@@ -92,6 +92,8 @@ body, html{
     display:grid;
     grid-template-columns:auto auto;
 }
+
+
 
 #socialmedialinks{
     top: 330px;
@@ -200,4 +202,12 @@ margin-top:40px;
 #eventcontainer{
     position:relative;
     margin-top:40px;
+}
+
+@media only screen and (max-width: 400px){
+
+    #moon{
+
+        margin-top:4vh;
+    }
 }

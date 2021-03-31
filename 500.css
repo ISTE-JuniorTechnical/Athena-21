@@ -95,6 +95,26 @@ body, html{
 }
 
 
+#login{
+    position:absolute;
+
+   
+}
+#login button{
+    background-color:transparent;
+    color:var(--navlink);
+    font-weight:600;
+    outline:none;
+    border:1px solid var(--navlink);
+    position:absolute;
+  top:-70px;
+  z-index:1000;
+}
+#login button:focus{
+    border:2px solid var(--navlink);
+    color:var(--nilbg);
+    background:var(--navlink);
+}
 
 #socialmedialinks{
     top: 330px;

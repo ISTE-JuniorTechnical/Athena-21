@@ -72,15 +72,14 @@ body, html{
 }
 
 
-
-#home #logo{
-    height:150px;
-    width:auto;
-    display:block;
-    position:absolute;
-    top: 51px;
-    left:50%;
-    transform:translateX(-50%);
+#home #logo {
+    height: 137px;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -210,4 +209,13 @@ margin-top:40px;
 
         margin-top:4vh;
     }
+    #hbox1 span:first-child, #hbox1 span:last-child {
+    font-size: 85px;
+}
+
+#hbox1 span {
+    font-size: 70px;
+
+}
+
 }

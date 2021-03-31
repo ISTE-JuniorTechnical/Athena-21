@@ -205,6 +205,17 @@ margin-top:40px;
     margin-top:40px;
 }
 
+#eviewmore {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* position: absolute; */
+    z-index: 5;
+    margin-top: 545px;
+}
+
 @media only screen and (max-width: 400px){
 
     #moon{

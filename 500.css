@@ -35,10 +35,12 @@ body, html{
 
 #navtoggler{
     background-color:var(--navlink);
-    font-weight:600;
-    color:white;
+    font-weight:500;
     border-radius:5px;
     padding:2px;
+    width:40px;
+    height:34px;
+    font-size:30px;
 
 }
 #home{
@@ -99,7 +101,7 @@ body, html{
 }
 
 #scrollDown{
-    top: 90vh;
+    top: 80vh;
 }
 
 #arow1{

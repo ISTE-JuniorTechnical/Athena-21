@@ -3,7 +3,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.shadowMap.enabled = false;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.needsUpdate = true;
- 
+var aboutpage = document.getElementById('about');
  
 document.body.appendChild( renderer.domElement );
 window.addEventListener('resize', onWindowResize, false);
@@ -178,9 +178,9 @@ function onMouseUp(event) {
   
 }
  
-window.addEventListener('mousedown', onMouseDown, false);
-window.addEventListener('mouseup', onMouseUp, false);
-window.addEventListener('mousemove', onMouseMove, false);
+aboutpage.addEventListener('mousedown', onMouseDown, false);
+aboutpage.addEventListener('mouseup', onMouseUp, false);
+aboutpage.addEventListener('mousemove', onMouseMove, false);
  
 //------------------------------------------------------------- RENDER
 var uSpeed = 0.1;

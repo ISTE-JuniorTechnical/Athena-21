@@ -16,8 +16,27 @@
   <!-- <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="768.css" /> -->
   <link rel="stylesheet" media="screen and (max-device-width: 500px)" href="500.css" />
   <link rel="stylesheet" media="screen and (max-device-width: 992px)" href="768-992.css" />
-<link rel="stylesheet" href="stars.css">
-
+  <style>
+      
+    df-messenger {
+      --df-messenger-bot-message: black;
+      --df-messenger-button-titlebar-color: orange;
+      --df-messenger-chat-background-color: orange	;
+      --df-messenger-font-color: white;
+      --df-messenger-send-icon: white;
+      --df-messenger-user-message: #479b3d;
+      --df-messenger-height: 200px;
+  
+     }
+      df-messenger {
+      height: 100px;
+      max-height: 70%;
+      min-height: 30%;
+      z-index:100;
+  }
+  
+  
+      </style>
   <title>ATHENA 2021</title>
 </head>
 
@@ -48,9 +67,7 @@
 
     </div>
   </nav>
-  <li id = 'voicerec'><span><button id = 'talk' class = 'btn-sm'><i class="fa fa-audio-description" aria-hidden="true"></i></button></span></li>
 
-    <div id = 'login' style = 'list-style-type:none;'><li><button class = 'btn-sm'>LOGIN/SIGNUP</button></li></div>
 
 
 
@@ -72,8 +89,8 @@
       <p id='year'><span>'2</span><span>1</span></p>
     </div>
 
-    <div id='owl-left'><img src="./owl-right.jpg" alt="owl-left"></div>
-    <div id='owl-right'> <img src="./owl-right.jpg" alt="owl-right"></div>
+    <div id='owl-left'><img src="./2.png" alt="owl-left"></div>
+    <div id='owl-right'> <img src="./2.png" alt="owl-right"></div>
     <img src="./athena.jpeg" alt="owl-full image" id = 'owl'>
     <div id="socialmedialinks">
 
@@ -206,6 +223,8 @@
         //   },
 
         centeredSlides: true,
+        // centeredSlidesBounds:true,
+        // centerInsufficientSlides:true,
         slidesPerView: 'auto',
         coverflowEffect: {
           rotate: 50,
@@ -219,6 +238,17 @@
         },
       });
     </script>
+     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+     <script src="https://cloud.google.com/dialogflow/es/docs/integrations/dialogflow-messenger#embed"></script>
+ 
+ <df-messenger
+   chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;b5d30c9f-f736-42a3-a887-866d381411a3_x.png"
+   intent="WELCOME"
+   chat-title="Athena"
+   agent-id="83dd20d5-dad1-4acf-a99b-5ffb55dccc6c"
+   language-code="en"
+ ></df-messenger>
+ 
     <script src='./home.js'></script>
 </body>
 

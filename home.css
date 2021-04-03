@@ -22,15 +22,13 @@ body, html{
 
 body{
     background-color: var(--bg);
+    /* background-color: var(--nilbg); */
+
 }
 
 /* navigation menu ===========================================================================*/
 
-#navigation{
-    
-    /* background-color:var(--bg); */
 
-}
 
 
 #navigation li:hover{
@@ -51,53 +49,6 @@ body{
      
  }
 
- #login{
-     position:absolute;
-left:50%;
-top:50%;
-transform:translate(-50%, -50%);   
-width:100%; 
- }
-
- #voicerec{
-     position:absolute;
-     right:10px;
-     top:15px;
-
- }
-
- #voicerec button{
-
-    background:transparent;
-    outline: none;
-    padding:0;
-    border:none;
-    color:var(--navlink);
-    font-size:18px;
-    
-
- }
-
- #login button{
-     background-color:transparent;
-     color:var(--navlink);
-     font-weight:600;
-     outline:none;
-     border:1px solid var(--navlink);
-     position:absolute;
-     left:50%;
-     transform:translateX(-50%);
-     top:-35px;
-     z-index:100;
-
- }
-
- #login button:hover{
-     background-color:white;
-     border:2px solid var(--navlink);
-     font-weight:700;
-     color:var(--navlink);
- }
 /* ========================================================================================== */
 #home{
     width:100%;
@@ -158,20 +109,37 @@ width:100%;
     display:block;
     position:absolute; 
     top:40px;
-    background:transparent;
+    /* background:transparent; */
     left:0;
-    transform:rotateY(180deg);
     z-index:-1;
+  
 }
+
+#owl-left img{
+    display:block;
+    height:500px;
+
+}
+
+
+
 #owl-right{
-    /* display:block; */
     position:absolute;
     right:0;
     top:40px;
     background:transparent;
     z-index:-1;
+    transform:rotateY(180deg);
 
 }
+#owl-right img{
+    display:block;
+    height:500px;
+}
+
+
+
+
 #moon{
     display:block;
     position:absolute;
@@ -340,7 +308,8 @@ opacity:.3
       font-weight: 500;
       position:fixed;
       bottom:10px;
-      right:10px;
+      /* right:20px; */
+      left:10px;
       z-index:5;
   }
 

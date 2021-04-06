@@ -43,9 +43,9 @@ body{
   .fa-linkedin,
   .fa-youtube,
   .fa-instagram,
-  .fa-github
+ 
   .fa-phone
-  .fa-envelope {
+  {
     font-size: 25px;
   }
   
@@ -60,27 +60,10 @@ body{
     border-color: #3b5998;
   }
   
-  .rounded-social-buttons .social-button.twitter {
-    background: #55acee;
-  }
   
-  .rounded-social-buttons .social-button.twitter:hover,
-  .rounded-social-buttons .social-button.twitter:focus {
-    color: #55acee;
-    background: #fefefe;
-    border-color: #55acee;
-  }
   
-  .rounded-social-buttons .social-button.linkedin {
-    background: #007bb5;
-  }
   
-  .rounded-social-buttons .social-button.linkedin:hover,
-  .rounded-social-buttons .social-button.linkedin:focus {
-    color: #007bb5;
-    background: #fefefe;
-    border-color: #007bb5;
-  }
+  
 
   
   .rounded-social-buttons .social-button.instagram {
@@ -111,16 +94,8 @@ body{
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   }
-  .rounded-social-buttons .social-button.github {
-    background: black;
-    border-color: #125688;
-  }
-  .rounded-social-buttons .social-button.github:hover,
-  .rounded-social-buttons .social-button.github:focus {
-    color: grey;
-    background: black;
-    border-color: grey;
-  }
+
+ 
   .rounded-social-buttons .social-button.instagram:hover,
   .rounded-social-buttons .social-button.instagram:focus {
     color: #125688;
@@ -139,17 +114,8 @@ body{
     border-color: #042e4d;
   }
   
-  .rounded-social-buttons .social-button.envelope {
-    background: #685555;
-  }
+ 
   
-  .rounded-social-buttons .social-button.envelope:hover,
-  .rounded-social-buttons .social-button.envelope:focus {
-    color: #bb0000;
-    background: #fefefe;
-    border-color: #bb0000;
-    border-color: #125688;
-  }
 
   .social-icons {
     display: flex;
@@ -189,10 +155,10 @@ body{
     margin-top: 10px;
     padding: 4vw 0 0;
     color: orange;
-    background-color: #1c1c1bff; }
+    background-color:	#251c19; }
 
 #footer #map {
-    height: 450px;
+    height: 300px;
     background-color: orange;
     background-image:url('a.jpg');
 }

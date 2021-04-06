@@ -62,8 +62,16 @@ body{
   
   
   
+  .rounded-social-buttons .social-button.linkedin {
+    background: #db0505;
+  }
   
-  
+  .rounded-social-buttons .social-button.linkedin:hover,
+  .rounded-social-buttons .social-button.linkedin:focus {
+    color: #db0505;
+    background: #fefefe;
+    border-color: #db0505;
+  }
 
   
   .rounded-social-buttons .social-button.instagram {
@@ -104,14 +112,14 @@ body{
   }
 
   .rounded-social-buttons .social-button.phone {
-    background: #bb0000;
+    background: #088d4b;
   }
   
   .rounded-social-buttons .social-button.phone:hover,
   .rounded-social-buttons .social-button.phone:focus {
-    color: #685555;
+    color: #088d4b;
     background: #fefefe;
-    border-color: #042e4d;
+    border-color: #088d4b;
   }
   
  
@@ -158,11 +166,11 @@ body{
     background-color:	#251c19; }
 
 #footer #map {
-    height: 300px;
+    height: 250px;
     background-color: orange;
     background-image:url('a.jpg');
 }
 #footer * { line-height: 180%; }
-#footer #footer-bottom { background-color: orange; }
+#footer #footer-bottom { background-color: rgb(85, 78, 65); }
 
 @media (max-width: 992px) { #footer #contact { border: none !important; } }

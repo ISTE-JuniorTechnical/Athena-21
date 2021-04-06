@@ -172,5 +172,7 @@ body{
 }
 #footer * { line-height: 180%; }
 #footer #footer-bottom { background-color: rgb(85, 78, 65); }
-
+#footer{
+  margin-top:250px;
+}
 @media (max-width: 992px) { #footer #contact { border: none !important; } }

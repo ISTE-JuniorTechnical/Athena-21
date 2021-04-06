@@ -9,6 +9,7 @@
     --youtube: #FF0000;
     --instagram: #e4405f;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin:0;
@@ -370,25 +371,24 @@ opacity:.3
     grid-column-gap: 20px;
 
 }
-
-#botpic{
-
-    height:150px;
-    width:200px;
-    border:1px solid var(--navlink);
-    background-color:var(--bg );
-    opacity:0.7;
-    color:var(--nilbg);
-    display:grid;
-    justify-content:center;
-    align-content:center;
-    z-index:4;
-    border-radius:10px;
-
-
-
+#biopicdesign{
+    background-color:transparent;
+    animation:biopicdesign 3s infinite;
 }
 
+@keyframes biopicdesign{
+    0%, 100%{
+        transform:translateY(-10px);
+    }
+    50%{
+        transform:translateY(10px);
+    }
+}
+
+
+#biopic img{
+    height:300px;
+}
 #botdesc{
     height:150px;
     width:500px;
@@ -446,6 +446,7 @@ height:400px;
     background-color:transparent;
     color:var(--nilbg);
     margin-top:250px;
+    font-family: 'Poppins', sans-serif;
    
 
 }

@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="./footer.css">
   <link rel="stylesheet" href="./home.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css" integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw==" crossorigin="anonymous" />
   <!-- <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="1024.css" /> -->
   <!-- <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="768.css" /> -->
   <link rel="stylesheet" media="screen and (max-device-width: 500px)" href="500.css" />
@@ -83,10 +88,10 @@
 
     <img src="./logo.png" class="img-fluid img-responsive" id='logo' alt="athena official logo">
 
-    <div id="hbox1">
-      <p id='festname'><span>A</span><span>TH</span><span>EN</span><span>A</span></p>
+    <div id="hbox1" >
+      <p  class = 'animate__animated animate__heartBeat' id='festname'><span>A</span><span>TH</span><span>EN</span><span>A</span></p>
       <br>
-      <p id='year'><span>'2</span><span>1</span></p>
+      <p id='year' ><span>'2</span><span>1</span></p>
     </div>
 
     <div id='owl-left'><img src="./2.png" alt="owl-left"></div>
@@ -132,8 +137,24 @@
     </div>
 
     <div class="row mt-md-3" id='arow2'>
+     
+      
+      <figure class="imghvr-push-down" id = 'biopicdesign'>
 
-      <div id='botpic'>BOT</div>
+<div id="biopic">
+
+  <img src="./bot.png" loading = 'lazy' class = ' img-responsive img-fluid ' alt="">       
+
+</div>
+        <figcaption style = 'background-color:orange;'>
+          <h3 class="ih-fade-down ih-delay ">Astra</h3>
+          <p class="ih-zoom-in ih-delay">
+            <i>" Hi, there!!, I am Astra the bot ask me anything that you want to know about Athena."</i>
+          </p>
+        </figcaption>
+      </figure>
+
+
       <div id='botdesc' class='my-auto'>
         <p>CHAT WITH <span>BOT</span> FOR QUERIES RELATED TO <br><span>A</span>THEN<span>A</span></p>
       </div>
@@ -143,7 +164,7 @@
   </div>
   </div>
 
-  <div id="events">
+  <div id="events" class = ' mt-md-0' >
 
     <div id="eheading" class='mb-md-5'>EVENTS</div>
 

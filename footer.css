@@ -171,8 +171,9 @@ body{
     background-image:url('a.jpg');
 }
 #footer * { line-height: 180%; }
-#footer #footer-bottom { background-color: rgb(85, 78, 65); }
+#footer #footer-bottom { background-color: rgb(12, 9, 1); }
 #footer{
-  margin-top:250px;
+  margin-top:150px;
+  background-color: #080502;
 }
 @media (max-width: 992px) { #footer #contact { border: none !important; } }

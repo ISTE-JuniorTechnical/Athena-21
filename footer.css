@@ -72,14 +72,14 @@ body{
   }
   
   .rounded-social-buttons .social-button.linkedin {
-    background: #007bb5;
+    background: #db0505;
   }
   
   .rounded-social-buttons .social-button.linkedin:hover,
   .rounded-social-buttons .social-button.linkedin:focus {
-    color: #007bb5;
+    color: #db0505;
     background: #fefefe;
-    border-color: #007bb5;
+    border-color: #db0505;
   }
 
   
@@ -129,14 +129,14 @@ body{
   }
 
   .rounded-social-buttons .social-button.phone {
-    background: #bb0000;
+    background: #088d4b;
   }
   
   .rounded-social-buttons .social-button.phone:hover,
   .rounded-social-buttons .social-button.phone:focus {
-    color: #685555;
+    color: #088d4b;
     background: #fefefe;
-    border-color: #042e4d;
+    border-color: #088d4b;
   }
   
   .rounded-social-buttons .social-button.envelope {
@@ -192,11 +192,11 @@ body{
     background-color: #1c1c1bff; }
 
 #footer #map {
-    height: 450px;
+    height: 250px;
     background-color: orange;
     background-image:url('a.jpg');
 }
 #footer * { line-height: 180%; }
-#footer #footer-bottom { background-color: orange; }
+#footer #footer-bottom { background-color: rgb(85, 78, 65); }
 
 @media (max-width: 992px) { #footer #contact { border: none !important; } }

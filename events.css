@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.semiCircle {
+    position: relative;
+    background: #04080c;
+    height: 30vh;
+  }
+  
+  .semiCircle::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    z-index: 100;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    background:url(./logo.png);
+    background-size:cover;
+    background-position:center;
+background-color:#fff;
+    transform: translateX(-50%) translateY(50%);
+    bottom: 0px;
+  }

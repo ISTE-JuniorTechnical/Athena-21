@@ -1,0 +1,249 @@
+:root{
+    --mainClr: black;
+    --subClr: orange;
+    --subClr2: white;
+    --facebook: #3b5999;
+    --youtube: #FF0000;
+    --instagram: #e4405f;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body, html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:var(--mainClr);
+}
+
+#navigation  li a{
+    color:var(--subClr);
+    font-weight:700;
+    
+}
+
+
+#navigation li:hover{
+
+    background-color:var(--subClr);
+    border-radius:10px;
+}
+
+
+
+ #navigation a:hover{
+
+    color:var(--subClr2);
+     
+ }
+
+ .container-fluid{
+     margin:0;
+     padding:0;
+ }
+
+
+ #home{
+     width:100%;
+
+ }
+ #owl-left, #owl-right{
+     height:500px;
+     display:block;
+     position:absolute;
+     top:100px;
+ }
+ #owl-right{
+     right:0;
+     transform:rotateY(180deg);
+ }
+ 
+ #logo{
+     height:160px;
+     display:block;
+     position:absolute;
+     left:50%;
+     transform:translateX(-50%);
+     top:100px;
+ }
+#hbox1{
+    width:90%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+ #hbox1 span{
+    color:var(--subClr2);
+    font-size:80px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+#hbox1 span:first-child, #hbox1 span:last-child{
+
+    font-size:95px;
+}
+
+#hbox1 span:nth-child(3), #hbox1 span:nth-child(4), #hbox1 #year span:nth-child(1){
+    color:var(--subClr);
+}
+
+#hbox1 #year{
+    left:50%;
+    transform: translate(-50%);
+    position:absolute;
+    top:-35px;
+  
+    
+}
+#hbox1 #year span{
+    font-size:40px;
+}
+
+
+#socialmedialinks{
+    margin-top:-60px;
+}
+#socialmedialinks a{
+    text-decoration:none;
+    color:var(--subClr2);
+}
+
+
+.social-media-link--facebook:before {
+  background-image: linear-gradient(45deg, #000 0%, #000 49%, var(--facebook) 50%);
+}
+
+
+
+.social-media-link--instagram:before {
+  background-image: linear-gradient(45deg, #000 0%, #000 49%, var(--instagram) 50%);
+}
+
+
+
+.social-media-link--youtube:before {
+  background-image: linear-gradient(45deg, #000 0%, #000 49%, var(--youtube) 50%);
+}
+
+.social-media-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.social-media-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  border-radius:50%;
+}
+.social-media-link > i {
+  z-index: 1;
+}
+.social-media-link:before {
+  border-radius:50%;
+  width: 45px;
+  height: 45px;
+  content: "";
+  position: absolute;
+  background-size: 300%;
+  background-position: 0% 0%;
+  transition: background-position 0.55s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+.social-media-link:hover, .social-media-link:active, .social-media-link:focus {
+  transform: translateY(-1px);
+  padding-bottom: 10px;
+}
+.social-media-link:hover:before, .social-media-link:active:before, .social-media-link:focus:before {
+  background-position: top right;
+}
+.social-media-link + .social-media-link {
+  margin-left: 4px;
+
+}
+
+#scrollDown{
+
+    color:var(--subClr);
+    position:absolute;
+    top:110%;
+    left:50%;
+    transform:translate(-50%) rotate(180deg);
+    border:2px solid var(--subClr);
+display:grid;
+place-items: center;
+height:60px;
+width:60px;
+border-radius:50%;
+opacity:.3
+
+
+}
+
+#scrollDown a{
+    color:var(--subClr);
+    text-decoration:none;
+    font-size:65px;
+    font-weight:600;
+
+}
+#scrollDown span{
+    margin-bottom:-10px;
+    position:absolute;
+    animation:scrollDown 2s infinite;
+
+}
+@keyframes scrollDown{
+    0%, 100%{
+        margin-bottom:-10px;
+    }
+    50%{
+        margin-bottom:-2px;
+    }
+}
+
+#scrollDown:hover{
+    opacity:1;
+}
+
+#moon{
+    display:block;
+    width:900px;
+    opacity:0.5;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, 19%);
+    z-index:-2;
+}
+
+
+
+
+@media only screen and (min-height: 1200px){
+
+
+#hbox1{
+
+    top:25%;
+
+}
+#moon{
+    transform:translate(-50%, -20%);
+
+}
+}

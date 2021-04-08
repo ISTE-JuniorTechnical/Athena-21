@@ -275,6 +275,10 @@ opacity:.3
     font-size:20px;
 
 }
+
+#events{
+    z-index:-1;
+}
 #ebuttons{
 
     display:grid;
@@ -316,6 +320,7 @@ opacity:.3
   width: 100%;
 text-align:center;
 height:400px;
+z-index:0;
   
 }
 
@@ -323,6 +328,7 @@ height:400px;
   background-position: center;
   background-size: cover;
   border:2px outset var(--navlink);
+  z-index:0;
  
 
 }
@@ -348,8 +354,15 @@ height:400px;
 
 }
 #viewmore{
-    position:relative;
+    position:absolute;
  margin-top: 543px;
+ left:50%;
+ transform:translate(-50%);
+}
+#viewbtn{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
 }
 #viewbtn span{
     display:none;
@@ -380,6 +393,29 @@ footer{
     transform:rotate(360deg);
 }
 
+#upbtn{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+
+
+}
+#upbtn .fa{
+    font-size:36px;
+
+}
+#upbtn a{
+    text-decoration:none;
+    color:var(--subClr);
+}
+#upbtn a:hover, #upbtn a:focus{
+    color:orangered;
+}
+.btn{
+    outline:none;
+}
+
+/* based on the height of the  */
 @media only screen and (min-height: 1200px){
 
 
@@ -396,9 +432,14 @@ footer{
 
 }
 }
-
+/* 500px and below */
 @media only screen and (max-width:500px){
-
+#navigation{
+    z-index:1;
+}
+#events{
+    z-index:-1;
+}
 
     #owl-left, #owl-right{
         display:none;
@@ -424,12 +465,39 @@ footer{
 
 }
 
-@media only screen and (minwidth:600px){
+/* 600px and below width */
 
-    footer{
-        display:flex;
+@media only screen and (max-width:640px) and (min-width:501px){
 
+
+    #moon{
+        width:500px;
+        height:500px;
     }
+}
+/* below 740px */
+@media only screen and (max-width:740px) and (min-width:641px){
 
 
+    #moon{
+        width:600px;
+        height:600px;
+    }
+}
+/* below 840px */
+
+@media only screen and (max-width:840px) and (min-width:741px){
+
+
+    #moon{
+        width:700px;
+        height:700px;
+    }
+  
+}
+@media only screen and (max-width: 940px)and (min-width:840px){
+    #moon{
+        width:800px;
+        height:800px;
+    }
 }

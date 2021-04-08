@@ -16,12 +16,36 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Athena-21</title>
+    <style>
+      
+        df-messenger {
+          --df-messenger-bot-message: black;
+          --df-messenger-button-titlebar-color: orange;
+          --df-messenger-chat-background-color: orange	;
+          --df-messenger-font-color: white;
+          --df-messenger-send-icon: white;
+          --df-messenger-user-message: #479b3d;
+          --df-messenger-height: 200px;
+      
+         }
+          df-messenger {
+          height: 100px;
+          max-height: 70%;
+          min-height: 30%;
+          z-index:100;
+      }
+      
+      
+          </style>
 </head>
 
 <body>
 
+
+
+
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: transparent" id='navigation'>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        <button class="navbar-toggler d-lg-none btn" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"
                 style="color:#fff;"></i></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -107,7 +131,7 @@
         <section id="about">
 
 
-            <div class="row mx-auto mt-md-5">
+            <div class="row mx-auto mt-md-5 mb-5">
                 <div class="col-11 mx-auto text-center">
                     <h2 class = 'mx-auto' id = 'aheading'>ABOUT</h2>
                 </div>
@@ -128,7 +152,7 @@
                 <div class="row">
 
 
-                    <div class=" col-md-3">
+                    <div class=" col-md-3 mx-auto">
 
 
                         <figure class="imghvr-push-down" id = 'figurebot'>
@@ -148,7 +172,7 @@
     
     
                     </div>
-                    <div class="col-md-9 col-11  text-center ml-md-0" id = 'botdesc'>
+                    <div class="col-md-9 col-11 mx-auto text-center ml-md-0" id = 'botdesc'>
             <p class = 'mx-auto text-center'>CHAT WITH <span>BOT</span> FOR QUERIES RELATED TO <br><span>A</span>THEN<span>A</span></p>
     
                     </div>
@@ -222,9 +246,9 @@
           
               </div>
 
-<div class="row w-100 text-center">
+<div class="row w-100">
 
-    <div class="col-11 mx-auto" id = 'viewmore'>
+    <div class="col-11 mx-auto text-center" id = 'viewmore'>
         <button class = 'btn-sm' id = 'viewbtn'>view<span>--></span></button>
     </div>
 </div>
@@ -234,48 +258,44 @@
         </section>
     </div>
 
-    <section class="footer pt-5 mt-5">
 
- <div class="row w-100 mt-5 pt-5">
+ 
+ 
+   <footer class = 'mt-5 pt-5 '>
 
-    <div class="col-md-3 mx-auto text-center"><img id = 'logoath' src="./logo.png" alt=""></div>
-     <div class="col-11 col-md-5 mx-auto text-center mt-5">
-        <p > ATHENA by ISTE TKMCE</p>
-         
-     </div>
-    <div class="col-md-3 mx-auto text-center"><img id = 'logoath' src="./logo.png" alt=""></div>
+    <div class="row mx-auto">
+<div class="col-md-3 col-5 mx-auto"><img src="./flogo.png" class = 'w-25 mx-auto img-responsive img-fluid rounded-circle img-thumbnail' id = 'fiste' alt=""></div>
 
-     
+        <div class="col-11 col-md-5  mx-auto">
+            <div class="socialmedialinks" id = 'footermedia'>
+
+                <div class="social-media-links"><a class="social-media-link social-media-link--facebook"
+                        href="#"><i class="fab fa-facebook-f"></i></a>
     
- </div>
- <hr>
- <div class="row w-100">
-    <div class="col-11 col-sm-6">
-        <p class="mx-auto text-center">Copyright &copy; 2017 All Rights Reserved by 
-            <a href="#">404 ISTE</a>.
-               </p>
-     </div>
-     <div class="col-11 col-sm-6">
-       
-
-        <div class="socialmedialinks" id = 'footermedia'>
-
-            <div class="social-media-links"><a class="social-media-link social-media-link--facebook"
-                    href="#"><i class="fab fa-facebook-f"></i></a>
-
-                <a class="social-media-link social-media-link--instagram" href="#"><i
-                        class="fab fa-instagram"></i></a>
-
-                <a class="social-media-link social-media-link--youtube" href="#"><i
-                        class="fab fa-youtube"></i></a>
+                    <a class="social-media-link social-media-link--instagram" href="#"><i
+                            class="fab fa-instagram"></i></a>
+    
+                    <a class="social-media-link social-media-link--youtube" href="#"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
+        <div class="col-md-3 col-5 mt-3 mt-md-0 mx-auto"><img src="./flogo.png" class = 'w-25 mx-auto  img-responsive img-fluid rounded-circle img-thumbnail' id = 'flogo' alt=""></div>
 
-     </div>
+    </div>
+    <hr style = 'background-color:white; width:55%;' class = 'mx-auto'>
+    <div class="row w-100 mt-4">
+        <div class="col-11 mx-auto text-center">
+<p  class = 'mx-auto ml-md-3' style = 'color:white;'>All copyright &copy; <span style = 'color:orange;'>404 ISTE</span></p>
+        </div>
+    </div>
 
- </div>
- 
-    </section>
+
+
+   </footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
@@ -297,9 +317,23 @@
           },
         });
       </script>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+ 
+        <df-messenger
+          chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;b5d30c9f-f736-42a3-a887-866d381411a3_x.png"
+          intent="WELCOME"
+          chat-title="Athena"
+          agent-id="83dd20d5-dad1-4acf-a99b-5ffb55dccc6c"
+          language-code="en"
+        ></df-messenger>
+        
 
       <script src="index.js"></script>
+
+
 
 </body>
 
 </html>
+
+

@@ -70,6 +70,7 @@ body{
  
  #logo{
      height:160px;
+     width:auto;
      display:block;
      position:absolute;
      left:50%;
@@ -483,13 +484,43 @@ footer{
 }
 
 @media only screen and (max-width:400px){
+
+    #logo{
+        height:150px;
+        width:auto;
+
+    }
+
+    #hbox1 span{
+        color:var(--subClr2);
+        font-size:70px;
+        font-family:'Times New Roman', Times, serif;
+        
+    }
+    #hbox1 span:first-child, #hbox1 span:last-child{
+    
+        font-size:85px;
+    }
+    
+    
+
+    #hbox1 #year span{
+        font-size:30px;
+    }
+    
+    
     #moon{
         width:300px;
         height:300px;
     }
+
+    .swiper-container{
+        width:95%;
+        height:450px;
+    }
   
 .swiper-slide{
-    background-size:contain;
+    background-size:90% 380px;
     background-repeat:no-repeat;
 }
 #scrollDown{

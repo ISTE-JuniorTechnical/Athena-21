@@ -8,7 +8,10 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css" integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
 
     <link rel="stylesheet" href="style.css">
 
@@ -157,12 +160,62 @@
 
         <section id="events">
 
+            <div class="row mx-auto mt-5">
+                <div class="col-11 mx-auto text-center">
+                    <h2 class = 'mx-auto' id = 'eheading'>EVENTS</h2>
+                </div>
+            </div>
+
+            <div class="row w-100 mx-auto text-center mt-4 mb-3">
+                <div class="col-11 mx-auto text-center" id = 'ebuttons'>
+                    <button class="btn-sm">SECTION1</button>
+                    <button class="btn-sm">SECTION2</button>
+                    <button class="btn-sm">SECTION3</button>
+                </div>
+            </div>
+
+
+            <div id="esection1" class = 'mt-5'>
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                  </div> <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+          
+          
+          
+              </div>
+
+           
+
         </section>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
 </body>
 
 </html>

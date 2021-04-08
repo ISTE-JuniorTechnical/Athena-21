@@ -63,6 +63,10 @@ body{
      right:0;
      transform:rotateY(180deg);
  }
+
+ #owl{
+     display:none;
+ }
  
  #logo{
      height:160px;
@@ -411,7 +415,7 @@ footer{
 #upbtn a:hover, #upbtn a:focus{
     color:orangered;
 }
-.btn{
+.btn:focus{
     outline:none;
 }
 
@@ -441,13 +445,13 @@ footer{
     z-index:-1;
 }
 
-    #owl-left, #owl-right{
-        display:none;
-    }
+  
 
     #moon{
         height:400px;
         width:400px;
+        top:70%;
+        z-index:-3;
     }
 
     #about{
@@ -461,43 +465,41 @@ footer{
         height:250px;
         margin-top:25px;
     }
-  
+  #owl-left, #owl-right{
+      display:none;
+
+  }
+
+  #owl{
+      width:275px;
+      height:auto;
+      display:block;
+      position:absolute;
+      left:50%;
+      transform:translate(-50%);
+      top:188px;
+  }
 
 }
 
-/* 600px and below width */
-
-@media only screen and (max-width:640px) and (min-width:501px){
-
-
+@media only screen and (max-width:400px){
     #moon{
-        width:500px;
-        height:500px;
-    }
-}
-/* below 740px */
-@media only screen and (max-width:740px) and (min-width:641px){
-
-
-    #moon{
-        width:600px;
-        height:600px;
-    }
-}
-/* below 840px */
-
-@media only screen and (max-width:840px) and (min-width:741px){
-
-
-    #moon{
-        width:700px;
-        height:700px;
+        width:300px;
+        height:300px;
     }
   
+.swiper-slide{
+    background-size:contain;
+    background-repeat:no-repeat;
 }
-@media only screen and (max-width: 940px)and (min-width:840px){
-    #moon{
-        width:800px;
-        height:800px;
-    }
+#scrollDown{
+    top:50vh;
+}
+#botpic{
+    height:200px;
+}
+
+#events{
+    margin-top:100px;
+}
 }

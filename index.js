@@ -45,7 +45,7 @@ renderer.shadowMap.needsUpdate = true;
 var aboutpage = document.getElementById('about');
  
 document.body.appendChild( renderer.domElement );
-window.addEventListener('resize', onWindowResize, false);
+window.addEventListener('resize', onWindowResize,false);
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -198,12 +198,12 @@ function onMouseDown(event) {
       //INTERSECTED.material.map = null;
       //lightBack.position.set(INTERSECTED.position.x,INTERSECTED.position.y,INTERSECTED.position.z);
       
-      TweenMax.to(camera.position, 1, {
-        x:INTERSECTED.position.x,
-        y:INTERSECTED.position.y,
-        z:INTERSECTED.position.z+3,
-        ease:Power2.easeInOut
-      });
+    //   TweenMax.to(camera.position, 1, {
+    //     x:INTERSECTED.position.x,
+    //     y:INTERSECTED.position.y,
+    //     z:INTERSECTED.position.z+3,
+    //     ease:Power2.easeInOut
+    //   });
       
     } else {
       if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);

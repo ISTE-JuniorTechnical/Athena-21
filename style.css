@@ -451,9 +451,16 @@ text-align: center;
     transform:translate(-50%, -20%);
 
 }
+.curved{
+    height: 10vh;
+
 }
+}
+
+
+
 /* 500px and below */
-@media only screen and (max-width:500px){
+@media only screen and (max-width:540px){
 #navigation{
     z-index:1;
 }

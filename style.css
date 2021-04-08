@@ -229,7 +229,7 @@ opacity:.3
 #moon{
     display:block;
     width:900px;
-    opacity:0.5;
+    opacity:0.3;
     position:absolute;
     left:50%;
     top:50%;
@@ -435,6 +435,18 @@ text-align: center;
     outline:none;
 }
 
+
+
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+
+    #moon{
+        width:700px;
+       
+    }
+    
+}
+
 /* based on the height of the  */
 @media only screen and (min-height: 1024px){
 
@@ -444,9 +456,10 @@ text-align: center;
     }
 #hbox1{
 
-    top:25%;
+    top:28%;
 
 }
+
 #moon{
     transform:translate(-50%, -20%);
 
@@ -465,8 +478,53 @@ text-align: center;
 
 
 }
+/* this is one of the complicated landscape thing  */
+@media only screen and (max-height:400px) {
+    #home, #about, #events{
+        height:800px;
+    }
+    #hbox1{
+        top:75vh;
+    }
+    #owl-right, #owl-left{
 
+        display:none;
+    }
+    #moon{
+        width:350px;
+    }
 
+    #about .row, #arow1{
+        width:80vw;
+
+    }
+
+    #logo{
+        height:150px;
+        width:auto;
+
+    }
+
+    #hbox1 span{
+        color:var(--subClr2);
+        font-size:70px;
+        font-family:'Times New Roman', Times, serif;
+        
+    }
+    #hbox1 span:first-child, #hbox1 span:last-child{
+    
+        font-size:85px;
+    }
+    
+    
+
+    #hbox1 #year span{
+        font-size:30px;
+    }
+    
+}
+
+/* this is not ridiculous */
 
 @media only screen and (max-width:768px){
     #moon{
@@ -573,3 +631,14 @@ text-align: center;
     margin-top:100px;
 }
 }
+
+canvas {
+    display: block;
+   
+    overflow:hidden;
+    position:absolute;
+    top:80vh;
+    left:-2%;
+    z-index:-4;
+    background-color: transparent;
+  }

@@ -107,10 +107,10 @@ body{
 }
 
 
-#socialmedialinks{
+.socialmedialinks{
     margin-top:-60px;
 }
-#socialmedialinks a{
+.socialmedialinks a{
     text-decoration:none;
     color:var(--subClr2);
 }
@@ -357,6 +357,31 @@ height:400px;
 #viewbtn:hover span{
 display:inline;
 }
+.footer a{
+ color:var(--subClr);
+}
+
+hr{
+    color:var(--subClr2);
+    background-color:var(--subClr2);
+
+}
+#footermedia{
+    margin-top:-110px;
+}
+#footermedia a{
+    color:var(--subClr2);
+}
+.footer p{
+    color:var(--subClr2);
+}
+.footer img{
+    height:80px;
+    width:100px;
+    border-radius:50%;
+
+}
+
 @media only screen and (min-height: 1200px){
 
 

@@ -436,7 +436,7 @@ text-align: center;
 }
 
 /* based on the height of the  */
-@media only screen and (min-height: 1200px){
+@media only screen and (min-height: 1024px){
 
 
     #home, #about, #events{
@@ -457,9 +457,25 @@ text-align: center;
 }
 }
 
+@media only screen and (min-height: 812px) and (max-width:700px){
+
+    #home, #about, #events{
+        height:800px;
+    }
 
 
-/* 500px and below */
+}
+
+
+
+@media only screen and (max-width:768px){
+    #moon{
+        width:540px;
+        height:540px;
+    }
+}
+
+/* 540px and below */
 @media only screen and (max-width:540px){
 #navigation{
     z-index:1;

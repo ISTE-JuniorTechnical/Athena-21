@@ -282,7 +282,7 @@ opacity:.3
     grid-auto-flow: column;
     grid-column-gap:25px ;
 }
-#ebuttons button{
+#ebuttons button, #viewbtn{
     border:2px solid var(--subClr);
     background-color:transparent;
     color:var(--subClr);
@@ -290,7 +290,7 @@ opacity:.3
    font-weight:700;
 }
 
-#ebuttons button:hover, #ebuttons button:focus{
+#ebuttons button:hover, #ebuttons button:focus, #viewbtn:hover, #viewbtn:focus{
     background-color:var(--subClr2);
     color:var(--subClr);
     font-weight:700;
@@ -347,7 +347,16 @@ height:400px;
     }
 
 }
-
+#viewmore{
+    position:relative;
+ margin-top: 543px;
+}
+#viewbtn span{
+    display:none;
+}
+#viewbtn:hover span{
+display:inline;
+}
 @media only screen and (min-height: 1200px){
 
 

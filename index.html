@@ -168,14 +168,14 @@
 
             <div class="row w-100 mx-auto text-center mt-4 mb-3">
                 <div class="col-11 mx-auto text-center" id = 'ebuttons'>
-                    <button class="btn-sm">SECTION1</button>
-                    <button class="btn-sm">SECTION2</button>
-                    <button class="btn-sm">SECTION3</button>
+                    <button class="btn-sm" onclick="esection1()">SECTION1</button>
+                    <button class="btn-sm" onclick="esection2()">SECTION2</button>
+                    <button class="btn-sm" onclick="esection3()">SECTION3</button>
                 </div>
             </div>
 
 
-            <div id="esection1" class = 'mt-5'>
+            <div id="esection1" class = 'mt-5 eventsection'>
 
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
@@ -189,6 +189,40 @@
           
           
               </div>
+
+              
+            <div id="esection2" class = 'mt-5 eventsection'>
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                  </div> <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+          
+          
+          
+              </div>
+
+              
+            <div id="esection3" class = 'mt-5 eventsection'>
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+                  </div> <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+          
+          
+          
+              </div>
+
+
 
            
 
@@ -215,6 +249,8 @@
           },
         });
       </script>
+
+      <script src="index.js"></script>
 
 </body>
 

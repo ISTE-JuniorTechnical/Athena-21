@@ -12,10 +12,11 @@ if(innerwidth <= expectedwidth){
         let subrow = document.getElementsByClassName('subrow1')[i];
         mainrow.classList.add('swiper-container');
         subrow.classList.add('swiper-wrapper');
+        mainrow.classList.remove('row');
     }
 
     for (let j = 0; j < 12; j++){
-
+console.log('atleast its working')
         innerrow = document.getElementsByClassName('innerrow')[j];
         innerrow.classList.add('swiper-slide');
         

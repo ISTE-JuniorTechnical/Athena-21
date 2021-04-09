@@ -51,7 +51,7 @@ background-color:#fff;
     background-color: var(--mainClr);
    
     color: var(--mainClr);
-    overflow: hidden;
+    /* overflow: hidden; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
@@ -311,6 +311,28 @@ padding: 20px 0;
 text-align: center;
 }
 
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.swiper-wrapper{
+  display:grid;
+  grid-auto-flow: column;
+  grid-template-columns: 95% 95% 95%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  height: 360px;
+
+}
+
 @media only screen and (min-height:1024px){
   .curved{
     height:10vh;
@@ -336,23 +358,4 @@ text-align: center;
   #heading h3{
     font-size:22px;
   }
-}
-
-.swiper-container {
-  display:grid;
-  grid-template-columns: 380px 380px 380px;
-width: 100%;
-text-align:center;
-height:400px;
-z-index:0;
-
-}
-
-.swiper-slide {
-background-position: center;
-background-size: cover;
-border:2px outset var(--navlink);
-z-index:0;
-
-
 }

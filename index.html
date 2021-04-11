@@ -191,7 +191,7 @@
                 </div>
             </div>
 
-            <div class="row w-100 mx-auto text-center mt-4 mb-3">
+            <div class="row w-100 mx-auto text-center mt-4 mb-1">
                 <div class="col-12 mx-auto text-center" id = 'ebuttons'>
                     <button class="btn-sm" onclick="esection1()">SECTION1</button>
                     <button class="btn-sm" onclick="esection2()">SECTION2</button>
@@ -200,7 +200,7 @@
             </div>
 
 
-            <div id="esection1" class = 'row w-100 mt-5 eventsection'>
+            <div id="esection1" class = ' w-100 mt-2 eventsection'>
 
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
@@ -216,7 +216,7 @@
               </div>
 
               
-            <div id="esection2" class = 'row w-100 mt-5 eventsection'>
+            <div id="esection2" class = ' w-100 mt-2 eventsection'>
 
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
@@ -232,7 +232,7 @@
               </div>
 
               
-            <div id="esection3" class = 'row w-100 mt-5 eventsection'>
+            <div id="esection3" class = ' w-100 mt-2 eventsection'>
 
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
@@ -301,7 +301,34 @@
           effect: 'coverflow',
           grabCursor: true,
           centeredSlides: true,
-          slidesPerView: 'auto',
+          slidesPerView: 3,
+          spaceBetween : 30,
+          breakpoints: {
+            320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                   
+                },
+              
+
+                850: {
+                    slidesPerView: 2,
+                    spaceBetween:20,
+                  
+                },
+              
+
+                1184: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+
+                1300: {
+                  slidesPerView:3,
+                  spaceBetween:70,
+                }
+
+          },
           coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -326,8 +353,8 @@
           language-code="en"
         ></df-messenger>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
-        <script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script> -->
+        <!-- <script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script> -->
       <script src="index.js"></script>
 
 

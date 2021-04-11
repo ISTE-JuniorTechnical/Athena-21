@@ -190,37 +190,20 @@ body {
   color: var(--subClr);
   position: absolute;
   top: 110%;
-  left: 50%;
-  transform: translate(-50%) rotate(180deg);
-  border: 2px solid var(--subClr);
-  display: grid;
-  place-items: center;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+left:50%;
+transform:translateX(-50%);
   opacity: 0.3;
+}
+
+#scrollDown i{
+    font-size:70px;
 }
 
 #scrollDown a {
   color: var(--subClr);
   text-decoration: none;
-  font-size: 65px;
-  font-weight: 600;
 }
-#scrollDown span {
-  margin-bottom: -10px;
-  position: absolute;
-  animation: scrollDown 2s infinite;
-}
-@keyframes scrollDown {
-  0%,
-  100% {
-    margin-bottom: -10px;
-  }
-  50% {
-    margin-bottom: -2px;
-  }
-}
+
 
 #scrollDown:hover {
   opacity: 1;
@@ -258,9 +241,7 @@ body {
   color: var(--subClr2);
   font-weight: 500;
 }
-#botpic {
-  display: block;
-}
+
 #botdesc {
   display: flex;
   align-items: center;
@@ -271,9 +252,6 @@ body {
   font-size: 22px;
 }
 
-#figurebot {
-  background-color: transparent;
-}
 
 #botdesc span:nth-child(1) {
   font-size: 20px;
@@ -554,7 +532,7 @@ footer p {
   }
 
   #scrollDown {
-    top: 383px;
+    bottom: 6vh;
   }
   #botpic {
     height: 250px;
@@ -607,12 +585,7 @@ footer p {
   }
 
  
-  #scrollDown {
-    top: 50vh;
-  }
-  #botpic {
-    height: 200px;
-  }
+ 
 
   #events {
     margin-top: 100px;

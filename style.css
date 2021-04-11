@@ -196,9 +196,16 @@ transform:translateX(-50%);
 }
 
 #scrollDown i{
-    font-size:70px;
+    font-size:40px;
+    animation:scrollDown 2s infinite;
 }
-
+@keyframes scrollDown{
+    from{
+        transform:rotate(0);
+    }to{
+        transform:rotate(360deg);
+    }
+}
 #scrollDown a {
   color: var(--subClr);
   text-decoration: none;

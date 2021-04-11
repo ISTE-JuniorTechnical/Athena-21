@@ -434,7 +434,7 @@ text-align: center;
 .btn:focus{
     outline:none;
 }
-canvas {
+/* canvas {
     display: block;
    
     overflow:hidden;
@@ -443,7 +443,7 @@ canvas {
     left:-2%;
     z-index:-4;
     background-color: transparent;
-  }
+  } */
 
 
 

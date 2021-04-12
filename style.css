@@ -405,6 +405,8 @@ footer p {
 }
 #upbtn .fa {
   font-size: 36px;
+  background-color: var(--mainClr);
+  border-radius:50%;
 }
 #upbtn a {
   text-decoration: none;

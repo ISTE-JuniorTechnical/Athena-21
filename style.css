@@ -448,28 +448,17 @@ footer p {
   .curved {
     height: 10vh;
   }
-  canvas {
-    top: 30vh;
-  }
+
 }
 
-@media only screen and (min-height: 812px) and (max-width: 700px) {
-  #home,
-  #about,
-  #events {
-    height: 800px;
-  }
-  canvas {
-    top: 70vh;
-  }
-}
+
 /* this is one of the complicated landscape thing  */
 @media only screen and (max-height: 400px) {
-  #home,
+  /* #home,
   #about,
   #events {
     height: 800px;
-  }
+  } */
   #hbox1 {
     top: 75vh;
   }
@@ -534,9 +523,9 @@ footer p {
     z-index: -3;
   }
 
-  #about {
+  /* #about {
     height: 80vh;
-  }
+  } */
 
   #scrollDown {
     bottom: 6vh;

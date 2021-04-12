@@ -276,6 +276,11 @@ transform:translateX(-50%);
   grid-auto-flow: column;
   grid-column-gap: 25px;
 }
+
+#view{
+  margin-top:-5%;
+  background-color:transparent;
+}
 #ebuttons button,
 #viewbtn {
   border: 2px solid var(--subClr);
@@ -358,13 +363,10 @@ z-index:0;
   }
 }
 #viewmore {
-  position: absolute;
 
-  left: 50%;
-  transform: translate(-50%);
-  display:flex;
-  align-items:center;
-  justify-content: center;
+
+  height:10vh;
+ 
 }
 #viewbtn {
   position: absolute;
@@ -439,6 +441,7 @@ footer p {
   }
 }
 
+
 @media only screen and (min-height:950px)
 {
   #home,
@@ -456,7 +459,9 @@ footer p {
   .curved{
     height:20vh;
   }
-
+#view{
+  margin-top:-19%;
+}
 }
 
 /* based on the height of the  */
@@ -481,46 +486,6 @@ footer p {
 
 }
 
-/* this is one of the complicated landscape thing  */
-@media only screen and (max-height: 400px) {
- 
-  #hbox1 {
-    top: 75vh;
-  }
-  #owl-right,
-  #owl-left {
-    display: none;
-  }
-  #moon {
-    width: 350px;
-  }
-
-  #about .row,
-  #arow1 {
-    width: 80vw;
-  }
-
-  #logo {
-    height: 150px;
-    width: auto;
-  }
-
-  #hbox1 span {
-    color: var(--subClr2);
-    font-size: 70px;
-    font-family: "Times New Roman", Times, serif;
-  }
-  #hbox1 span:first-child,
-  #hbox1 span:last-child {
-    font-size: 85px;
-  }
-
-  #hbox1 #year span {
-    font-size: 30px;
-  }
-}
-
-/* this is not ridiculous */
 
 @media only screen and (max-width: 768px) {
   #moon {
@@ -533,6 +498,9 @@ footer p {
 @media only screen and (max-width: 540px) {
   #navigation {
     z-index: 1;
+  }
+  #view{
+    margin-top:-35%;
   }
   #events {
   
@@ -615,8 +583,3 @@ footer p {
   }
 }
 
-@media only screen and  (max-height:850px){
-  #viewmore{
-    margin-top:-30%;
-  }
-}

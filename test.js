@@ -63,6 +63,16 @@ function mathRandom(num = 1) {
   return setNumber;
 }
  
+
+
+<img src="./athena.jpeg" id='owl' loading='lazy' alt="">
+<img src="./2.png" alt="" loading='lazy' id='owl-left'>
+<img src="./logo.png" alt="" loading='lazy' id='logo'>
+<img src="./2.png" alt="" loading='lazy' id='owl-right'>
+
+
+<img src="./moon.png" loading='lazy' id='moon' alt="">
+
 //------------------------------------------------------------- INIT
 function init() {
   for (var i = 0; i<20; i++) {

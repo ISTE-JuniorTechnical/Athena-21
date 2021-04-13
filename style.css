@@ -222,13 +222,7 @@ transform:translateX(-50%);
   opacity: 1;
 }
 
-canvas{
-  top:45%;
-  left:-2%;
-  resize:both;
-  position:absolute;
-  z-index:-3;
-}
+
 
 #moon {
   display: block;
@@ -258,7 +252,7 @@ canvas{
   background-color:var(--mainClr);
   border-radius:15px;
   color:var(--subClr2);
-  opacity:0.8;
+  opacity:0.6;
   border:2px solid var(--subClr);
   position:relative;
 }
@@ -335,12 +329,9 @@ canvas{
   grid-column-gap: 25px;
 }
 
-#view{
-  margin-top:-5%;
-  background-color:transparent;
-}
-#ebuttons button,
-#viewbtn {
+
+#ebuttons button
+ {
   border: 2px solid var(--subClr);
   background-color: transparent;
   color: var(--subClr);
@@ -349,9 +340,8 @@ canvas{
 }
 
 #ebuttons button:hover,
-#ebuttons button:focus,
-#viewbtn:hover,
-#viewbtn:focus {
+#ebuttons button:focus
+ {
   background-color: var(--subClr2);
   color: var(--subClr);
   font-weight: 700;
@@ -384,25 +374,24 @@ canvas{
   height: 400px;
   background-repeat:no-repeat;
 }
-/* 
-.swiper-container {
-    display:grid;
-    grid-template-columns: 380px 380px 380px;
-  width: 100%;
-text-align:center;
-height:400px;
-z-index:0;
-  
+
+
+.lastSlide{
+  height:100%;
+  background-color: var(--mainClr);
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+}
+.lastSlide a{
+
+  text-decoration:none;
+  color:var(--subClr);
+  font-size:xx-large;
+
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  border:2px outset var(--navlink);
-  z-index:0;
- 
-
-} */
 
 @keyframes animEsection {
   from {
@@ -419,23 +408,6 @@ z-index:0;
   to {
     margin-left: -100%;
   }
-}
-#viewmore {
-
-
-  height:10vh;
- 
-}
-#viewbtn {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#viewbtn span {
-  display: none;
-}
-#viewbtn:hover span {
-  display: inline;
 }
 
 .curved {
@@ -554,7 +526,11 @@ footer p {
   }
 
   .card:nth-child(1){
-    margin-top:130px;
+    margin-top:100px;
+  }
+  .card:nth-child(2){
+
+    margin-top:0;
   }
 
  
@@ -587,9 +563,7 @@ footer p {
   .curved{
     height:20vh;
   }
-#view{
-  margin-top:-19%;
-}
+
 
 @keyframes lroundedCard{
   from{
@@ -617,9 +591,7 @@ footer p {
   #navigation {
     z-index: 1;
   }
-  #view{
-    margin-top:-35%;
-  }
+ 
   #events {
   
     margin-bottom: 100px;

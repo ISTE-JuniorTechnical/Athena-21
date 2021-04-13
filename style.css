@@ -15,7 +15,7 @@
 
 body,
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -500,28 +500,6 @@ footer p {
 }
 
 
-@media only screen and (min-height:950px)
-{
-  #home,
-  #about,
-  #events{
-    height:60vh;
-  }
-#logo{
-  height:130px;
-}
-  #owl-right,
-  #owl-left {
-    height:400px;
-  }
-  .curved{
-    height:20vh;
-  }
-#view{
-  margin-top:-19%;
-}
-}
-
 /* based on the height of the  */
 @media only screen and (min-height: 1100px) {
   #home,
@@ -540,6 +518,16 @@ footer p {
   }
   .curved {
     height: 16vh;
+  }
+
+  @keyframes roundedCard {
+    from{
+    left:-5vmin;
+  
+    }
+    to{
+      left:-13vmin;
+    }
   }
 
 }
@@ -580,6 +568,49 @@ footer p {
   }
 
 }
+
+
+@media only screen and (min-height:950px)
+{
+  #home,
+  #about,
+  #events{
+    height:60vh;
+  }
+#logo{
+  height:130px;
+}
+  #owl-right,
+  #owl-left {
+    height:400px;
+  }
+  .curved{
+    height:20vh;
+  }
+#view{
+  margin-top:-19%;
+}
+
+@keyframes lroundedCard{
+  from{
+
+    top:12vmin;
+  }to{
+    top:-7vmin;
+  }
+
+}
+
+#events{
+
+  margin-top:150px;
+  
+}
+
+
+
+}
+
 
 /* 540px and below */
 @media only screen and (max-width: 540px) {

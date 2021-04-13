@@ -42,8 +42,7 @@ body {
 }
 
 #home,
-#events,
-#about {
+#events {
   width: 100%;
   height: 100vh;
   overflow:hidden;
@@ -270,7 +269,28 @@ canvas{
   resize:both;
   border:2px solid var(--subClr);
   border-radius:50%;
-  left:-20vmin;
+  left:-5vmin;
+  top:50%;
+  transform:translate(0, -50%);
+  background-color:var(--mainClr);
+  animation: roundedCard 1s forwards 3s;
+}
+
+@keyframes roundedCard {
+  from{
+  left:-5vmin;
+
+  }
+  to{
+    left:-20vmin;
+  }
+}
+.roundedCard img{
+  display:block;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
 }
 #aheading,
 #eheading {
@@ -530,6 +550,35 @@ footer p {
     width: 540px;
     height: 540px;
   }
+
+  .roundedCard{
+
+    left:50%;
+    transform:translate(-50%, -50%);
+    top:12vmin;
+
+    animation:lroundedCard 1s forwards;
+
+  }
+
+  .card{
+    margin-bottom:150px;
+  }
+
+  .card:nth-child(1){
+    margin-top:130px;
+  }
+
+ 
+  @keyframes lroundedCard{
+    from{
+
+      top:12vmin;
+    }to{
+      top:-15vmin;
+    }
+  }
+
 }
 
 /* 540px and below */

@@ -517,7 +517,7 @@ footer p {
     transform:translate(-50%, -50%);
     top:12vmin;
 
-    animation:lroundedCard 1s forwards;
+    animation:lroundedCard 1s forwards 4s;
 
   }
 
@@ -549,9 +549,12 @@ footer p {
 @media only screen and (min-height:950px)
 {
   #home,
-  #about,
   #events{
     height:60vh;
+  }
+
+  #about{
+    height:auto;
   }
 #logo{
   height:130px;

@@ -40,7 +40,7 @@
 
 
 
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top p-1" style="background-color: transparent" id='navigation'>
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top p-sm-0 p-2" style="background-color: transparent" id='navigation'>
     <button class="navbar-toggler d-lg-none btn" style='background-color: orange;' type="button" data-toggle="collapse"
       data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
       aria-label="Toggle navigation"><i class="fas fa-bars" style="color:#fff;"></i></button>
@@ -243,7 +243,7 @@
 
   </div>
 
-  <section class='curved p-1'>
+  <section class='curved p-2 p-sm-0' style = 'overflow-x:hidden;'>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
@@ -332,10 +332,33 @@
   agent-id="83dd20d5-dad1-4acf-a99b-5ffb55dccc6c"
   language-code="en"
   ></df-messenger>
-<!-- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
-  <script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script> -->
-  <script src="index.js"></script>
+
+  <script>
+
+var es1 = document.getElementById('esection1');
+var es2 = document.getElementById('esection2');
+var screenwidth = -(window.innerWidth - 17) + 'px';
+
+var esection1 = () =>{
+    es1.style.animation = 'animEsection 2s forwards';
+    if(es2.style.marginLeft != screenwidth){
+        es2.style.animation = 'animEsection2 2s forwards';
+    }
+   
+}
+
+var esection2 = () =>{
+    es2.style.animation = 'animEsection 2s forwards';
+    if(es1.style.marginLeft != screenwidth){
+        es1.style.animation = 'animEsection2 2s forwards';
+    }
+   
+}
+
+
+
+
+  </script>
 
 
 

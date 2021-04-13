@@ -15,7 +15,7 @@
 
 body,
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -620,6 +620,15 @@ footer p {
     transform: translate(-50%);
     top: 188px;
   }
+  
+  @keyframes lroundedCard{
+    from{
+
+      top:12vmin;
+    }to{
+      top:-12vmin;
+    }
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -661,6 +670,15 @@ footer p {
 
   #events {
     margin-top: 100px;
+  }
+  
+  @keyframes lroundedCard{
+    from{
+
+      top:12vmin;
+    }to{
+      top:-16vmin;
+    }
   }
 }
 

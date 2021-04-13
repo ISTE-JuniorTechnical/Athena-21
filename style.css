@@ -223,6 +223,14 @@ transform:translateX(-50%);
   opacity: 1;
 }
 
+canvas{
+  top:45%;
+  left:-2%;
+  resize:both;
+  position:absolute;
+  z-index:-3;
+}
+
 #moon {
   display: block;
   width: 900px;
@@ -232,8 +240,38 @@ transform:translateX(-50%);
   top: 50%;
   transform: translate(-50%, 19%);
   z-index: -2;
+  /* display:none; */
+}
+.about-curved {
+  position: absolute;
+  /* background: var(--subClr); */
+ height:100vh;
+ opacity:0.4;
+ width:50%;
+ border-radius:0% 100% 100% 0% / 0% 50% 50% 100%  ;
+ 
+  left:0;
+  top:0;
+
 }
 
+.card{
+  background-color:var(--mainClr);
+  border-radius:15px;
+  color:var(--subClr2);
+  opacity:0.8;
+  border:2px solid var(--subClr);
+  position:relative;
+}
+.roundedCard{
+  position:absolute;
+  height:150px;
+  width:150px;
+  resize:both;
+  border:2px solid var(--subClr);
+  border-radius:50%;
+  left:-20vmin;
+}
 #aheading,
 #eheading {
   color: var(--subClr);

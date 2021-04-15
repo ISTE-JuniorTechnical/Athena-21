@@ -122,10 +122,9 @@
 
     </section>
     <img src="./moon.png" loading='lazy' id='moon' alt="">
-
     <section id="about" class='mt-4 mb-5'>
 
-      <section class="about-curved"></section>
+      <section id="about-curved"></section>
 
       <div class="row mt-md-5 mt-1 mx-auto">
         <div class="col-12 mx-auto ">
@@ -243,7 +242,7 @@
 
   </div>
 
-  <section class='curved p-2 p-sm-0' style = 'overflow-x:hidden;'>
+  <section class='curved p-2 p-sm-0 container-fluid' style = 'overflow-x:hidden;'>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
@@ -333,34 +332,10 @@
   language-code="en"
 ></df-messenger>
 
-  <script>
 
-var es1 = document.getElementById('esection1');
-var es2 = document.getElementById('esection2');
-var screenwidth = -(window.innerWidth - 17) + 'px';
-
-var esection1 = () =>{
-    es1.style.animation = 'animEsection 2s forwards';
-    if(es2.style.marginLeft != screenwidth){
-        es2.style.animation = 'animEsection2 2s forwards';
-    }
-   
-}
-
-var esection2 = () =>{
-    es2.style.animation = 'animEsection 2s forwards';
-    if(es1.style.marginLeft != screenwidth){
-        es1.style.animation = 'animEsection2 2s forwards';
-    }
-   
-}
-
-
-
-
-  </script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+<script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script>
+<script src="./index.js"></script>
 
 </body>
 

@@ -63,6 +63,12 @@ body {
   transform: rotateY(180deg);
 }
 
+canvas{
+
+position:absolute;
+z-index: -3;
+}
+
 #owl {
   display: none;
 }

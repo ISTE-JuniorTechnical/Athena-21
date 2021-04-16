@@ -24,20 +24,19 @@ var esection2 = () =>{
 
 var renderer = new THREE.WebGLRenderer({antialias:true});
 var aboutpage = document.getElementById('about');
-var homepage = document.getElementById('about-curved');
-var window = window;
+// var homepage = document.getElementById('about-curved');
 
-renderer.setSize($(homepage).width(), $(window).height());
-
+// renderer.setSize($(homepage).width(), $(window).height());
 
 
-homepage.appendChild(renderer.domElement);
-// renderer.setSize( window.innerWidth, window.innerHeight );
+
+// homepage.appendChild(renderer.domElement);
+renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.shadowMap.enabled = false;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.needsUpdate = true;
  
-// document.body.appendChild( renderer.domElement );
+document.body.appendChild( renderer.domElement );
 window.addEventListener('resize', onWindowResize,false);
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;

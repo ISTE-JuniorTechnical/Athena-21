@@ -67,7 +67,21 @@ canvas{
 
 position:absolute;
 z-index: -3;
+left:-2%;
+overflow:hidden;
+top:100vh;
 }
+.card hr{
+  width:100%;
+  background-color:var(--subClr);
+  
+
+}
+
+.card h4{
+  color:var(--subClr);
+}
+
 
 #owl {
   display: none;
@@ -276,6 +290,30 @@ transform:translateX(-50%);
   animation: roundedCard 1s forwards 3s;
 }
 
+
+.roundedCardIste{
+
+  position:absolute;
+  height:150px;
+  width:150px;
+  resize:both;
+  border:2px solid var(--subClr);
+  border-radius:50%;
+ left:50%;
+ transform:translate(-120%);
+  background-color:var(--subClr);
+  animation:roundiste 1s forwards 5s;
+}
+
+@keyframes roundiste{
+  from{
+    transform:translate(-120%);
+  }
+  to{
+    transform:translate(-50%);
+  }
+}
+
 @keyframes roundedCard {
   from{
   left:-5vmin;
@@ -285,7 +323,7 @@ transform:translateX(-50%);
     left:-20vmin;
   }
 }
-.roundedCard img{
+.roundedCard img, .roundedCardIste img{
   display:block;
   position:absolute;
   left:50%;
@@ -460,16 +498,7 @@ footer p {
 .btn:focus {
   outline: none;
 }
-/* canvas {
-    display: block;
-   
-    overflow:hidden;
-    position:absolute;
-    top:80vh;
-    left:-2%;
-    z-index:-4;
-    background-color: transparent;
-  } */
+
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   #moon {
@@ -490,7 +519,9 @@ footer p {
    left:50%;
    transform:translate(-50%, -50%);
   }
-
+canvas{
+  display:none;
+}
   #moon {
     transform: translate(-50%, -20%);
   }

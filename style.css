@@ -300,6 +300,7 @@ transform:translateX(-50%);
   border:2px solid var(--subClr);
   border-radius:50%;
  left:50%;
+ bottom:-120px;
  transform:translate(-120%);
   background-color:var(--subClr);
   animation:roundiste 1s forwards 5s;
@@ -508,7 +509,7 @@ footer p {
 
 
 /* based on the height of the  */
-@media only screen and (min-height: 1100px) {
+@media only screen and (min-height: 1200px) {
   #home,
   #about,
   #events {

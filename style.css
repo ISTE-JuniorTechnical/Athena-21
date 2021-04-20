@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 :root {
   --mainClr: black;
   --subClr: orange;
@@ -401,8 +402,7 @@ transform:translateX(-50%);
   background-repeat:no-repeat;
   display:grid;
   place-items:center;
-  font-weight:700;
- 
+ font-family:'Potta One',cursive;
   color:var(--mainClr);
 
 }
@@ -411,13 +411,13 @@ transform:translateX(-50%);
   background-color:var(--subClr);
  
   font-size:30px;
-  padding:4px;
-  padding-bottom:24px;
+
+  padding-bottom:20px;
   padding-left:5px;
   padding-right:5px;
   border-radius:10px;
-  line-height:45px;
-  text-transform:uppercase;
+
+  text-transform:capitalize;
 }
 
 .swiper-slide:hover{

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 :root {
   --mainClr: black;
   --subClr: orange;
@@ -49,6 +50,9 @@ body {
   position:relative;
   z-index:0;
   background-color:transparent;
+}
+#events{
+  height:130vh;
 }
 
 #owl-left,
@@ -287,7 +291,7 @@ transform:translateX(-50%);
   top:50%;
   transform:translate(0, -50%);
   background-color:var(--mainClr);
-  animation: roundedCard 1s forwards 3s;
+  animation: roundedCard 1s forwards 1s;
 }
 
 
@@ -396,24 +400,31 @@ transform:translateX(-50%);
   width: 300px;
   height: 400px;
   background-repeat:no-repeat;
-}
-
-
-.lastSlide{
-  height:100%;
-  background-color: var(--mainClr);
-  display:flex;
-  justify-content: center;
-  align-items:center;
+  display:grid;
+  place-items:center;
+  font-family: "Potta One", cursive;
+ 
+  color:var(--mainClr);
 
 }
-.lastSlide a{
-
-  text-decoration:none;
-  color:var(--subClr);
-  font-size:xx-large;
-
+.swiper-slide span{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  background-color:var(--subClr);
+ 
+  font-size:30px;
+  padding:4px;
+  padding-bottom:24px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius:10px;
+  line-height:45px;
+  text-transform:uppercase;
 }
+
+.swiper-slide:hover{
+  border:2px solid var(--subClr);
+}
+
 
 
 @keyframes animEsection {
@@ -446,7 +457,6 @@ footer {
   width: 100%;
   background: var(--mainClr);
   color: #868c96;
-  /* margin-top: 20px; */
   bottom:5%;
   border-radius: 25% 23% 10% 10% / 89% 89% 10% 10%;
 }
@@ -521,7 +531,7 @@ canvas{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 999px) {
   #moon {
     width: 540px;
     height: 540px;
@@ -533,7 +543,7 @@ canvas{
     transform:translate(-50%, -50%);
     top:12vmin;
 
-    animation:lroundedCard 1s forwards 4s;
+    animation:lroundedCard 1s forwards 1s;
 
   }
 
@@ -555,18 +565,22 @@ canvas{
 
       top:12vmin;
     }to{
-      top:-15vmin;
+      top:-10vmin;
     }
   }
+
 
 }
 
 
 @media only screen and (min-height:950px)
 {
-  #home,
-  #events{
+  #home
+ {
     height:60vh;
+  }
+  #events{
+    height:80vh;
   }
 
   #about{
@@ -614,6 +628,7 @@ canvas{
   #events {
   
     margin-bottom: 100px;
+    height:100vh;
   }
 
  

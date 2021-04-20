@@ -35,7 +35,7 @@
   </style>
 </head>
 
-<body>
+<body onresize = "window.location.href = 'index.html'">
 
 
 
@@ -205,9 +205,29 @@
 
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
-            <div class="swiper-slide lastSlide"><a href="events.html" target="_blank" rel="noopener noreferrer">viewmore</a></div>
+            <div class="swiper-slide">
+              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+                <source src="athena.mp4" type="video/mp4">
+              </video>
+           <span>coming soon</span>
+
+
+
+
+
+            </div>
+            <div class="swiper-slide">
+              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+                <source src="athena.mp4" type="video/mp4">
+              </video>
+           <span>coming soon</span>
+            </div>
+            <div class="swiper-slide">
+              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+                <source src="athena.mp4" type="video/mp4">
+              </video>
+           <span>coming soon</span>
+            </div>
           </div> <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
@@ -221,9 +241,24 @@
 
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
-            <div class="swiper-slide lastSlide"><a href="events.html" target="_blank" rel="noopener noreferrer">viewmore</a></div>
+            <div class="swiper-slide">
+              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+                <source src="athena.mp4" type="video/mp4">
+              </video>
+           <span>coming soon</span>
+            </div>
+            <div class="swiper-slide">
+              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+                <source src="athena.mp4" type="video/mp4">
+              </video>
+           <span>coming soon</span>
+            </div>
+            <div class="swiper-slide lastSlide">
+              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+                <source src="athena.mp4" type="video/mp4">
+              </video>
+           <span>coming soon</span>
+            </div>
           </div> <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
@@ -296,11 +331,13 @@
         },
 
 
-        850: {
+        600: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 40,
 
         },
+
+
 
 
         1184: {
@@ -341,6 +378,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
 <script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script>
 <script src="./index.js"></script>
+<script>$(window).bind('orientationchange', function (event) {
+  location.reload(true);
+});</script>
 
 </body>
 

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 :root {
   --mainClr: black;
   --subClr: orange;
@@ -402,7 +401,7 @@ transform:translateX(-50%);
   background-repeat:no-repeat;
   display:grid;
   place-items:center;
-  font-family: "Potta One", cursive;
+  font-weight:700;
  
   color:var(--mainClr);
 

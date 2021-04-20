@@ -38,52 +38,47 @@
 <body>
 
 
-  <div id="three-container"></div>
-
-<div  id="instructions">
-	<main>
-    <div class="dank-ass-loader">
-       <div class="row">
-          <div class="arrow up outer outer-18"></div>
-          <div class="arrow down outer outer-17"></div>
-          <div class="arrow up outer outer-16"></div>
-          <div class="arrow down outer outer-15"></div>
-          <div class="arrow up outer outer-14"></div>
-       </div>
-       <div class="row">
-          <div class="arrow up outer outer-1"></div>
-          <div class="arrow down outer outer-2"></div>
-          <div class="arrow up inner inner-6"></div>
-          <div class="arrow down inner inner-5"></div>
-          <div class="arrow up inner inner-4"></div>
-          <div class="arrow down outer outer-13"></div>
-          <div class="arrow up outer outer-12"></div>
-       </div>
-       <div class="row">
-          <div class="arrow down outer outer-3"></div>
-          <div class="arrow up outer outer-4"></div>
-          <div class="arrow down inner inner-1"></div>
-          <div class="arrow up inner inner-2"></div>
-          <div class="arrow down inner inner-3"></div>
-          <div class="arrow up outer outer-11"></div>
-          <div class="arrow down outer outer-10"></div>
-       </div>
-       <div class="row">
-          <div class="arrow down outer outer-5"></div>
-          <div class="arrow up outer outer-6"></div>
-          <div class="arrow down outer outer-7"></div>
-          <div class="arrow up outer outer-8"></div>
-          <div class="arrow down outer outer-9"></div>
-       </div>
+ <div id="loader-wrapper">
+  <div class='body'>
+    <span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class='base'>
+      <span></span>
+      <div class='face'></div>
     </div>
- </main>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js'></script>
-<script  src="./script.js"></script>
+  </div>
+  <div class='longfazers'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>FLYING.....</h1>
+  
+ </div>
+
+
+<script>
+//  setTimeout(() => {
+  
+
+// var preloader = document.querySelector('#loader-wrapper');
+// preloader.style.display = 'none';
+
+
+//  }, 10000);
+window.onload = () =>{
+  var preloader = document.querySelector('#loader-wrapper');
+preloader.style.display = 'none';
+}
+
+
+
+</script>
 
 
 

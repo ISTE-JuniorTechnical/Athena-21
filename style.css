@@ -14,178 +14,266 @@
   resize: both;
 }
 
-body {
-	background-color:white;
-	margin: 0;
-	overflow:hidden;
-	user-select:none;
+#loader-wrapper{
+ width:100%;
+ height:100%;
+ background-color:var(--subClr);
+ position:fixed;
+ z-index:1000000;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-canvas {
-	top: 50%;
-  
-	
-	/* background-image: linear-gradient(315deg, #000 0%, #000 74%); */
-background-color:white;	
+
+h1 {
+  position: absolute;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  left: 50%;
+  top: 58%;
+  /* transform:translate(-50%); */
+  margin-left: -20px;
 }
 
-#instructions {
-	position: absolute;
-	color: #fff;
-	bottom: 0;
-	padding-bottom: 6px;
-	font-family: sans-serif;
-	width: 100%;
-	text-align: center;
-	pointer-events: none;
+.body {
+  position: absolute;
+  top: 50%;
+  margin-left: -50px;
+  left: 50%;
+  animation: speeder 0.4s linear infinite;
+}
+.body > span {
+  height: 5px;
+  width: 35px;
+  background: #000;
+  position: absolute;
+  top: -19px;
+  left: 60px;
+  border-radius: 2px 10px 1px 0;
 }
 
+.base span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 100px solid #000;
+  border-bottom: 6px solid transparent;
+}
+.base span:before {
+  content: "";
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  right: -110px;
+  top: -16px;
+}
+.base span:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-right: 55px solid #000;
+  border-bottom: 16px solid transparent;
+  top: -16px;
+  right: -98px;
+}
 
-  .dank-ass-loader {
-	/* height: 80px; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-  .dank-ass-loader .row {
-	display: flex;
-  }
+.face {
+  position: absolute;
+  height: 12px;
+  width: 20px;
+  background: #000;
+  border-radius: 20px 20px 0 0;
+  transform: rotate(-40deg);
+  right: -125px;
+  top: -15px;
   
-  .arrow {
-	width: 0px;
-	height: 0px;
-	margin: 0 -6px;
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-bottom: 21.6px solid black;
-	-webkit-animation: blink 1s infinite;
-			animation: blink 1s infinite;
-	filter: drop-shadow(0 0 18px black);
+}
+.face:after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: #000;
+  right: 4px;
+  top: 7px;
+  position: absolute;
+  transform: rotate(40deg);
+  transform-origin: 50% 50%;
+  border-radius: 0 0 0 2px;
+}
+
+.body > span > span:nth-child(1),
+.body > span > span:nth-child(2),
+.body > span > span:nth-child(3),
+.body > span > span:nth-child(4) {
+  width: 30px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  animation: fazer1 0.2s linear infinite;
+}
+
+.body > span > span:nth-child(2) {
+  top: 3px;
+  animation: fazer2 0.4s linear infinite;
+}
+
+.body > span > span:nth-child(3) {
+  top: 1px;
+  animation: fazer3 0.4s linear infinite;
+  animation-delay: -1s;
+}
+
+.body > span > span:nth-child(4) {
+  top: 4px;
+  animation: fazer4 1s linear infinite;
+  animation-delay: -1s;
+}
+
+@keyframes fazer1 {
+  0% {
+    left: 0;
   }
-  .arrow.down {
-	transform: rotate(180deg);
+  100% {
+    left: -80px;
+    opacity: 0;
   }
-  .arrow.outer-1 {
-	-webkit-animation-delay: -0.0555555556s;
-			animation-delay: -0.0555555556s;
+}
+@keyframes fazer2 {
+  0% {
+    left: 0;
   }
-  .arrow.outer-2 {
-	-webkit-animation-delay: -0.1111111111s;
-			animation-delay: -0.1111111111s;
+  100% {
+    left: -100px;
+    opacity: 0;
   }
-  .arrow.outer-3 {
-	-webkit-animation-delay: -0.1666666667s;
-			animation-delay: -0.1666666667s;
+}
+@keyframes fazer3 {
+  0% {
+    left: 0;
   }
-  .arrow.outer-4 {
-	-webkit-animation-delay: -0.2222222222s;
-			animation-delay: -0.2222222222s;
+  100% {
+    left: -50px;
+    opacity: 0;
   }
-  .arrow.outer-5 {
-	-webkit-animation-delay: -0.2777777778s;
-			animation-delay: -0.2777777778s;
+}
+@keyframes fazer4 {
+  0% {
+    left: 0;
   }
-  .arrow.outer-6 {
-	-webkit-animation-delay: -0.3333333333s;
-			animation-delay: -0.3333333333s;
+  100% {
+    left: -150px;
+    opacity: 0;
   }
-  .arrow.outer-7 {
-	-webkit-animation-delay: -0.3888888889s;
-			animation-delay: -0.3888888889s;
+}
+@keyframes speeder {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
   }
-  .arrow.outer-8 {
-	-webkit-animation-delay: -0.4444444444s;
-			animation-delay: -0.4444444444s;
+  10% {
+    transform: translate(-1px, -3px) rotate(-1deg);
   }
-  .arrow.outer-9 {
-	-webkit-animation-delay: -0.5s;
-			animation-delay: -0.5s;
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg);
   }
-  .arrow.outer-10 {
-	-webkit-animation-delay: -0.5555555556s;
-			animation-delay: -0.5555555556s;
+  30% {
+    transform: translate(1px, 2px) rotate(0deg);
   }
-  .arrow.outer-11 {
-	-webkit-animation-delay: -0.6111111111s;
-			animation-delay: -0.6111111111s;
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
   }
-  .arrow.outer-12 {
-	-webkit-animation-delay: -0.6666666667s;
-			animation-delay: -0.6666666667s;
+  50% {
+    transform: translate(-1px, 3px) rotate(-1deg);
   }
-  .arrow.outer-13 {
-	-webkit-animation-delay: -0.7222222222s;
-			animation-delay: -0.7222222222s;
+  60% {
+    transform: translate(-1px, 1px) rotate(0deg);
   }
-  .arrow.outer-14 {
-	-webkit-animation-delay: -0.7777777778s;
-			animation-delay: -0.7777777778s;
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
   }
-  .arrow.outer-15 {
-	-webkit-animation-delay: -0.8333333333s;
-			animation-delay: -0.8333333333s;
+  80% {
+    transform: translate(-2px, -1px) rotate(1deg);
   }
-  .arrow.outer-16 {
-	-webkit-animation-delay: -0.8888888889s;
-			animation-delay: -0.8888888889s;
+  90% {
+    transform: translate(2px, 1px) rotate(0deg);
   }
-  .arrow.outer-17 {
-	-webkit-animation-delay: -0.9444444444s;
-			animation-delay: -0.9444444444s;
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
-  .arrow.outer-18 {
-	-webkit-animation-delay: -1s;
-			animation-delay: -1s;
+}
+.longfazers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.longfazers span {
+  position: absolute;
+  height: 2px;
+  width: 20%;
+  background: #000;
+}
+.longfazers span:nth-child(1) {
+  top: 20%;
+  animation: lf 0.6s linear infinite;
+  animation-delay: -5s;
+}
+.longfazers span:nth-child(2) {
+  top: 40%;
+  animation: lf2 0.8s linear infinite;
+  animation-delay: -1s;
+}
+.longfazers span:nth-child(3) {
+  top: 60%;
+  animation: lf3 0.6s linear infinite;
+}
+.longfazers span:nth-child(4) {
+  top: 80%;
+  animation: lf4 0.5s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes lf {
+  0% {
+    left: 200%;
   }
-  .arrow.inner-1 {
-	-webkit-animation-delay: -0.1666666667s;
-			animation-delay: -0.1666666667s;
+  100% {
+    left: -200%;
+    opacity: 0;
   }
-  .arrow.inner-2 {
-	-webkit-animation-delay: -0.3333333333s;
-			animation-delay: -0.3333333333s;
+}
+@keyframes lf2 {
+  0% {
+    left: 200%;
   }
-  .arrow.inner-3 {
-	-webkit-animation-delay: -0.5s;
-			animation-delay: -0.5s;
+  100% {
+    left: -200%;
+    opacity: 0;
   }
-  .arrow.inner-4 {
-	-webkit-animation-delay: -0.6666666667s;
-			animation-delay: -0.6666666667s;
+}
+@keyframes lf3 {
+  0% {
+    left: 200%;
   }
-  .arrow.inner-5 {
-	-webkit-animation-delay: -0.8333333333s;
-			animation-delay: -0.8333333333s;
+  100% {
+    left: -100%;
+    opacity: 0;
   }
-  .arrow.inner-6 {
-	-webkit-animation-delay: -1s;
-			animation-delay: -1s;
+}
+@keyframes lf4 {
+  0% {
+    left: 200%;
   }
-  
-  @-webkit-keyframes blink {
-	0% {
-	  opacity: 0.1;
-	}
-	30% {
-	  opacity: 1;
-	}
-	100% {
-	  opacity: 0.1;
-	}
+  100% {
+    left: -100%;
+    opacity: 0;
   }
-  
-  @keyframes blink {
-	0% {
-	  opacity: 0.1;
-	}
-	30% {
-	  opacity: 1;
-	}
-	100% {
-	  opacity: 0.1;
-	}
-  }
+}
 
 body,
 html {
@@ -225,7 +313,7 @@ body {
   background-color:transparent;
 }
 #events{
-  height:130vh;
+  height:120vh;
 }
 
 #owl-left,
@@ -889,5 +977,19 @@ canvas{
       top:-16vmin;
     }
   }
+}
+
+@media only screen and (min-width:1400px){
+
+  @keyframes roundedCard {
+    from{
+    left:-5vmin;
+  
+    }
+    to{
+      left:-12vmin;
+    }
+  }
+
 }
 

@@ -12,14 +12,15 @@ function init() {
   root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 60);
 
-  var width = 60;
-  var height = 60;
+  var width = 48;
+  var height = 48;
 
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
 	l1.setCrossOrigin('Anonymous');
 	l1.load('flogo.png', function(img) {
 	  slide.setImage(img);
+    slide.resize(img);
 	})
   root.scene.add(slide);
 

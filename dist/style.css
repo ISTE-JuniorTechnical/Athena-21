@@ -1,15 +1,17 @@
 body {
-	background-color: black;
+	background-color:white;
 	margin: 0;
-	overflow: hiddent;
+	overflow:hidden;
+	user-select:none;
 }
 
 
 canvas {
 	top: 50%;
-    left: 1%;
-    right: 1%;
-	background-image: linear-gradient(315deg, #000 0%, #000 74%);
+  
+	
+	/* background-image: linear-gradient(315deg, #000 0%, #000 74%); */
+background-color:white;	
 }
 
 #instructions {
@@ -23,15 +25,7 @@ canvas {
 	pointer-events: none;
 }
 
-/* main {
-	width: 100vw;
-	height: 15vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #000;
-  } */
-  
+
   .dank-ass-loader {
 	/* height: 80px; */
 	display: flex;
@@ -48,10 +42,10 @@ canvas {
 	margin: 0 -6px;
 	border-left: 12px solid transparent;
 	border-right: 12px solid transparent;
-	border-bottom: 21.6px solid #fea500;
+	border-bottom: 21.6px solid black;
 	-webkit-animation: blink 1s infinite;
 			animation: blink 1s infinite;
-	filter: drop-shadow(0 0 18px #fea500);
+	filter: drop-shadow(0 0 18px black);
   }
   .arrow.down {
 	transform: rotate(180deg);

@@ -12,7 +12,7 @@
 <div id="three-container"></div>
 
 <div  id="instructions">
-	<main>
+	<main id = 'main'>
     <div class="dank-ass-loader">
        <div class="row">
           <div class="arrow up outer outer-18"></div>
@@ -55,6 +55,11 @@
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js'></script>
 <script  src="./script.js"></script>
-
+<script>
+   setTimeout(function(){        
+   //  $('#three-container').fadeOut();
+    $('#three-container').fadeOut('slow'); 
+}, 3000);
+</script>
 </body>
 </html>

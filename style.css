@@ -980,7 +980,7 @@ canvas{
 }
 
 @media only screen and (min-width:1400px){
-
+ 
   @keyframes roundedCard {
     from{
     left:-5vmin;
@@ -990,6 +990,26 @@ canvas{
       left:-12vmin;
     }
   }
-
+ 
+ 
+  #scrollDown {
+  color: var(--subClr);
+  position: absolute;
+  top: 103%;
+  left:50%;
+  transform:translateX(-50%);
+  opacity: 0.3;
 }
+ 
+canvas{
+ 
+position:absolute;
+z-index: -3;
+left:-2%;
+top:65vh;
+}
+
+ 
+}
+
 

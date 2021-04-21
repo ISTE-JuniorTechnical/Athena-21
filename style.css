@@ -560,11 +560,11 @@ transform:translateX(-50%);
 
 @keyframes roundedCard {
   from{
-  left:-5vmin;
+  left:50px;
 
   }
   to{
-    left:-20vmin;
+    left:-126px;
   }
 }
 .roundedCard img{
@@ -580,31 +580,7 @@ transform:translateX(-50%);
   font-weight: 700;
 }
 
-#arow1,
-#botdesc {
-  background-color: var(--mainClr);
-  border-radius: 15px;
-  opacity: 0.6;
-  border: 2px solid var(--subClr);
-  font-size: larger;
-  color: var(--subClr2);
-  font-weight: 500;
-}
 
-#botdesc {
-  display: flex;
-  align-items: center;
-}
-#botdesc span,
-#arow1 span {
-  color: var(--subClr);
-  font-size: 22px;
-}
-
-
-#botdesc span:nth-child(1) {
-  font-size: 20px;
-}
 
 #events {
   /* z-index: -1; */
@@ -665,6 +641,8 @@ transform:translateX(-50%);
   place-items:center;
  font-family:'Potta One',cursive;
   color:var(--mainClr);
+  border-radius:10px;
+  background-color:var(--mainClr);
 
 }
 .swiper-slide span{
@@ -768,9 +746,7 @@ footer p {
    left:50%;
    transform:translate(-50%, -50%);
   }
-canvas{
-  display:none;
-}
+
   #moon {
     transform: translate(-50%, -20%);
   }

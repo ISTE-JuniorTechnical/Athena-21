@@ -967,5 +967,27 @@ footer p {
     }
   }
 
+  #scrollDown {
+    color: var(--subClr);
+    position: absolute;
+    top: 103%;
+    left:50%;
+    transform:translateX(-50%);
+    opacity: 0.3;
 }
 
+#moon {
+    width: 800px;
+  }
+
+canvas{
+
+position:absolute;
+z-index: -3;
+left:-2%;
+top:60vh;
+
+
+}
+
+}

@@ -698,12 +698,6 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-* {
-  box-sizing: inherit;
-}
-*:before, *:after {
-  box-sizing: inherit;
-}
 
 #loader-wrapper {
   min-height: 100vh;
@@ -1083,7 +1077,7 @@ transform:translateX(-50%);
 .swiper-slide {
   background-position: center;
   background-size: contain;
-  width: 300px;
+  width: 290px;
   height: 400px;
   background-repeat:no-repeat;
   display:grid;

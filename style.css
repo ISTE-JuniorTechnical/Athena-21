@@ -82,6 +82,15 @@ body {
   background-color: var(--mainClr);
 }
 
+@keyframes showAth{
+  from{
+    opacity:1;
+  }
+  to{
+    opacity:0;
+    z-index:-999;
+  }
+}
 #navigation li a {
   color: var(--subClr);
   font-weight: 700;

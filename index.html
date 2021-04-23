@@ -32,43 +32,23 @@
       min-height: 30%;
       z-index: 100;
     }
+
+    
   </style>
 </head>
 
 <body>
 
 
- <div id="loader-wrapper">
-  <div class="loader">
-    <div class="box box0">
-      <div></div>
-    </div>
-    <div class="box box1">
-      <div></div>
-    </div>
-    <div class="box box2">
-      <div></div>
-    </div>
-    <div class="box box3">
-      <div></div>
-    </div>
-    <div class="box box4">
-      <div></div>
-    </div>
-    <div class="box box5">
-      <div></div>
-    </div>
-    <div class="box box6">
-      <div></div>
-    </div>
-    <div class="box box7">
-      <div></div>
-    </div>
-    <div class="ground">
-      <div></div>
-    </div>
-  </div><small></small><a class="dribbble" href="https://dribbble.com/shots/7227469-3D-Boxes-Loader" target="_blank"><img src="./iste-logo.png"/></a>
-  
+ <div id="loader">
+ 
+
+  <video autoplay muted loop id="myVideo">
+    <source src="./loader.mp4" type="video/mp4">
+    <!-- class="embed-responsive" -->
+  </video>
+<img src="./iste-logo.png" alt="istelogo" id = 'loaderimg'>
+
  </div>
 
 
@@ -82,7 +62,7 @@
 
 //  }, 10000);
 window.onload = () =>{
-  var preloader = document.querySelector('#loader-wrapper');
+  var preloader = document.querySelector('#loader');
 preloader.style.display = 'none';
 }
 
@@ -226,7 +206,7 @@ preloader.style.display = 'none';
               </div>
 
               <div class="card  mt-md-4">
-                <div class="roundedCard" ><img src="./logo.png" class = 'img-responsive img-fluid' alt=""></div>
+                <div class="roundedCard" ><img src="./owel.jpg" class = 'img-responsive img-fluid rounded-circle' alt=""></div>
                 <img class="card-img-top" src="holder.js/100x180/" alt="">
                 <div class="card-body">
                   <h4 class="card-title text-center">ASTRA</h4>
@@ -265,7 +245,7 @@ preloader.style.display = 'none';
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+              <video autoplay muted loop class="embed-responsive embed-responsive-1by1 ">
                 <source src="athena.mp4" type="video/mp4">
               </video>
            <span>coming soon</span>
@@ -276,13 +256,13 @@ preloader.style.display = 'none';
 
             </div>
             <div class="swiper-slide">
-              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+              <video autoplay muted loop class="embed-responsive embed-responsive-1by1 ">
                 <source src="athena.mp4" type="video/mp4">
               </video>
            <span>coming soon</span>
             </div>
             <div class="swiper-slide">
-              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+              <video autoplay muted loop class="embed-responsive embed-responsive-1by1 ">
                 <source src="athena.mp4" type="video/mp4">
               </video>
            <span>coming soon</span>
@@ -301,19 +281,19 @@ preloader.style.display = 'none';
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+              <video autoplay muted loop class="embed-responsive embed-responsive-1by1 ">
                 <source src="athena.mp4" type="video/mp4">
               </video>
            <span>coming soon</span>
             </div>
             <div class="swiper-slide">
-              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+              <video autoplay muted loop class="embed-responsive embed-responsive-1by1 ">
                 <source src="athena.mp4" type="video/mp4">
               </video>
            <span>coming soon</span>
             </div>
             <div class="swiper-slide lastSlide">
-              <video autoplay muted loop id="myVideo"class="embed-responsive embed-responsive-1by1 ">
+              <video autoplay muted loop class="embed-responsive embed-responsive-1by1 ">
                 <source src="athena.mp4" type="video/mp4">
               </video>
            <span>coming soon</span>

@@ -68,8 +68,8 @@ window.onload = () =>{
   
 
   var preloader = document.querySelector('#loader');
-  preloader.style.display = 'none';
-  
+  preloader.style.animation = 'showAth 2s forwards';
+ 
   
    }, 9500);
 }
@@ -77,11 +77,8 @@ window.onload = () =>{
 
 
 </script>
-
-
-
-
-
+<div id="showAthena">
+  
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top p-sm-0 p-2" style="background-color: transparent" id='navigation'>
     <button class="navbar-toggler d-lg-none btn" style='background-color: orange;' type="button" data-toggle="collapse"
       data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -100,7 +97,7 @@ window.onload = () =>{
           <a class="nav-link  ml-md-0 ml-3" href="#events">EVENTS</a>
         </li>
         <li class="nav-item ml-md-5 mr-md-5 ">
-          <a class="nav-link  ml-md-0 ml-3" href="#login.html">LOGIN</a>
+          <a class="nav-link  ml-md-0 ml-3" href="#login.html">REGISTER</a>
         </li>
 
 
@@ -357,6 +354,11 @@ window.onload = () =>{
 
 
   <div id="upbtn"><a href="#home"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></div>
+
+
+</div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.js'></script>

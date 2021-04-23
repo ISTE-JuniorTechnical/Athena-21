@@ -25,7 +25,7 @@ align-items:center;
 
 z-index:1000000;
 
-} 
+}
 
 
 #myVideo {
@@ -44,9 +44,9 @@ width:120%;
     display:block;
     width:100px;
     /* animation:load 2s forwards; */
-    
+
     }
-  
+
   #loaderimg{
   position:absolute;
   top:100%;
@@ -56,9 +56,9 @@ width:120%;
   display:block;
   width:100px;
   /* animation:load 2s forwards; */
-  
+
   }
-  
+
 
 
 
@@ -69,7 +69,7 @@ width:120%;
 html{
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  
+
 }
 
 
@@ -146,7 +146,7 @@ top:100vh;
 .card hr{
   width:100%;
   background-color:var(--subClr);
-  
+
 
 }
 
@@ -334,7 +334,7 @@ transform:translateX(-50%);
  opacity:0.4;
  width:50%;
  border-radius:0% 100% 100% 0% / 0% 50% 50% 100%  ;
- 
+
   left:0;
   top:0;
 
@@ -455,7 +455,7 @@ transform:translateX(-50%);
 .swiper-slide span{
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   background-color:var(--subClr);
- 
+
   font-size:30px;
 
   padding-bottom:20px;
@@ -564,7 +564,7 @@ footer p {
   @keyframes roundedCard {
     from{
     left:-5vmin;
-  
+
     }
     to{
       left:-13vmin;
@@ -602,7 +602,7 @@ footer p {
     margin-top:0;
   }
 
- 
+
   @keyframes lroundedCard{
     from{
 
@@ -657,7 +657,7 @@ footer p {
 #events{
 
   margin-top:150px;
-  
+
 }
 
 
@@ -670,25 +670,25 @@ footer p {
   #navigation {
     z-index: 1;
   }
- 
+
   #events {
-  
+
     margin-bottom: 100px;
     height:100vh;
   }
 
- 
+
 
   #moon {
   display:none;
   }
 
- 
+
 
   #scrollDown {
     bottom: 6vh;
   }
- 
+
   #owl-left,
   #owl-right {
     display: none;
@@ -703,7 +703,7 @@ footer p {
     transform: translate(-50%);
     top: 188px;
   }
-  
+
   @keyframes lroundedCard{
     from{
 
@@ -748,13 +748,13 @@ footer p {
     /* height:450px; */
   }
 
- 
- 
+
+
 
   #events {
     margin-top: 100px;
   }
-  
+
   @keyframes lroundedCard{
     from{
 
@@ -770,7 +770,7 @@ footer p {
   @keyframes roundedCard {
     from{
     left:-5vmin;
-  
+
     }
     to{
       left:-12vmin;
@@ -780,7 +780,7 @@ footer p {
   #scrollDown {
     color: var(--subClr);
     position: absolute;
-    top: 103%;
+    top: 115%;
     left:50%;
     transform:translateX(-50%);
     opacity: 0.3;
